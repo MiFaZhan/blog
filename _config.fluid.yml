@@ -307,7 +307,7 @@ web_analytics:
 
     # 用于统计 PV UV 的开始时间，格式为 "YYYY-MM-DD"
     # statistics on the start time, the format is "YYYY-MM-DD"
-    start_time: 2025-02-01
+    start_time: 2025-02-10
 
     # 新建一个 umami viewOnly 用户，然后通过 login api 获取该用户 token
     # create an umami viewOnly user, and then get user token through the login api
@@ -378,17 +378,29 @@ navbar:
     - {
       key: 'douban',
       icon: 'iconfont icon-douban-fill',
-      submenu: [
-        { key: '电影', link: '/movies/' },
-        { key: '游戏', link: '/games/' },
-        { key: '图书', link: '/books/' },
-      ]
-  }
-    - { key: "archive", link: "/archives/", icon: "iconfont icon-archive-fill" }
-    - { key: "category", link: "/categories/", icon: "iconfont icon-category-fill" }
-    - { key: "tag", link: "/tags/", icon: "iconfont icon-tags-fill" }
+      submenu: 
+        [
+          { key: '电影', link: '/movies/'},
+          { key: '游戏', link: '/games/' },
+          { key: '图书', link: '/books/' },
+        ]
+      }
+    - {
+      key: 'Blog',
+      icon: 'iconfont icon-bookmark-fill',
+      submenu: 
+        [
+          { key: 'archive', link: '/archives/' },
+          { key: 'category', link: '/categories/' },
+          { key: 'tag', link: '/tags/' },
+        ]
+      }
+    # - { key: "archive", link: "/archives/", icon: "iconfont icon-archive-fill" }
+    # - { key: "category", link: "/categories/", icon: "iconfont icon-category-fill" }
+    # - { key: "tag", link: "/tags/", icon: "iconfont icon-tags-fill" }
     - { key: "about", link: "/about/", icon: "iconfont icon-user-fill" }
     - { key: "links", link: "/links/", icon: "iconfont icon-link-fill" }
+    - { key: "Umami", link: "https://cloud.umami.is/share/Fu14FoNI0zuQxpwE/mifazhan.top", icon: "iconfont icon-codeforces" }
     
 
 # 搜索功能，基于 hexo-generator-search 插件，若已安装其他搜索插件请关闭此功能，以避免生成多余的索引文件

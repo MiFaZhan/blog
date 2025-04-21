@@ -72,3 +72,11 @@ noscript_warning: '博客在允许 JavaScript 运行的环境下浏览效果更�
 douban:
   categories: '豆瓣'
   menu: '豆瓣'
+
+blog:
+  categories: '博客'
+  menu: '博客'
+
+Umami:
+  categories: '访客统计'
+  menu: '访客统计'
