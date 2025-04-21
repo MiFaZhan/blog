@@ -295,11 +295,11 @@ web_analytics:
   umami:
     # umami js 文件地址，需要在 umami 后台创建站点后获取
     # umami js file url, get after create website in umami
-    src:
+    src: https://cloud.umami.is/script.js
 
     # umami 的 website id，需要在 umami 后台创建站点后获取
     # umami website id, get after create website in umami
-    website_id:
+    website_id: '9e1629a5-736c-4583-a656-19d5238102eb'
 
     # 如果你只想统计特定的域名可以填入此字段，多个域名通过逗号分隔，这可以避免统计 localhost。
     # If you only want to tracker to specific domains you can fill in this field, multiple domain names are separated by commas, which can avoid tracker localhost
@@ -307,11 +307,11 @@ web_analytics:
 
     # 用于统计 PV UV 的开始时间，格式为 "YYYY-MM-DD"
     # statistics on the start time, the format is "YYYY-MM-DD"
-    start_time: 2024-01-01
+    start_time: 2025-02-01
 
     # 新建一个 umami viewOnly 用户，然后通过 login api 获取该用户 token
     # create an umami viewOnly user, and then get user token through the login api
-    token:
+    token: 'api_Fp93RqKJg6Rryen2AT1dAkunRngRcEDz'
 
     # 填写 umami 部署的服务器地址，如 "https://umami.example.com"
     # server url of umami deployment, such as "https://umami.example.com"
