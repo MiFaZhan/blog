@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "golden-memory-443507-g4",
+  "private_key_id": "ce87bfa1785fe7f388513f3766e54fd7c400d791",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDRB705b9T2nUJc\nOnkR/5A1daW+BfS239wbMKFgmrSro22ZBQ0vUCIEBotTCKMksMmdFTgcjtGD52zw\nLSySq1b7hIoLl1Yownb+pK26s2vEwfFv8Mr7XzrHn+aR874cwoLvAMNuPDPlzlzc\ngW4cV+dCTTIjm2OOZUrsFwafzhoCSjIyhjIsdMnSMemS+kPSwl9Hf6FSSSgUTKAJ\nHz/GLLIHKAf2GTHtY0Q/i9VEUScUWydO33SK2sPM9I+mONzmUY1eX+Zom+FZmyPU\no8XVqk0GtliqejTApyQ5YZWNsumgWWo8xlYyMWg6WmoH5LAe3ZFMnl4Jkc7fq3p9\nAtwoJWDLAgMBAAECggEADNlRb+Docdpb1GiBvbH8btTTAdnC36TmFkPIf7Qyy+Qp\nXgEZ/OELnjy6vrlmseAuHHpL7zF2Ponwv9i/BysCF0bf53N/h9TgVKnRxgq2Yqtb\nSHrAN3B0oAW7uhgGBSWNv9xHpxSLSiKDwcgw+QwMOp6dKOQp2/xs/RMzRIp6Pc6u\nPLWtVAmt0BKmj7sdYd7YgUMQXxW5L88hKiHt0kBF1lM6YNduygPbxRqZyb55Ygzi\n5N2YXZFcPll8yGOnTGCfZL6XRt5142k9GsQQsjXK5/JYLQHu0MtJ9mJI/AZDjvar\nSiLa+pY34ja7KY5DXAsyy4F2VGvOJ9uT+8RyxG/ZuQKBgQD6fxStdWxLsNQX36b6\n0yWDNdYc5zWDpo1pQ7lagryTyRE2J6PMzTzshXhkmNtgmNMPmSGbAop7ef+BV1bt\nq6m05AG4KYpEfPA3Pg3AwyxB0Z5lC5pTjJG2w4S8lQVfOXW0aAOIIcwr+KXw2taZ\nc3EwfznJWBUz+Ki2DSYt9OiU+QKBgQDVn253OrPbdxgRSXnqJ7py5Di2Y4IyfIiI\ngggyt09zAiDQuMTqg7gJ0gJ62OExnyH5y4HYsi1HrNylNXe8MuBKRItcguPwDa+w\ncMO+lLOLDJkahVp5Ocva+RqPbXY/0JX51skGd0QQy2+w++fvD2lGSkdT6hEkUBpi\nnaby9y2I4wKBgQCZg/BELcZkzMXuq55F8cj3lLLXm8rsF9JqRJr/oUe4umzV5403\nIkDIIzQZUqR/mqke0hYKTZBZA/dWaRRZK+8hcOqs1qhqOLdu45TCIdqpq7GK84Vs\n1qUmgMSEXj+gkDJWkbg4YZ4jBIuOBE+oU1t3AUGE53p3E1kx2PUhDQrM4QKBgAm0\nKU9vMjZY7ZXzcX9KeLS5Wz4lvQdQEt+okHjFTO2bfiQdEIzamOSRTp2H9orLgL6Z\nGPff+CCWYJt8l0jMQtX80RvNsk74QC/Sn4GrvZAmbVoADsEM+A6lXCiBv2pcrkNg\nF1ec2VGt/A/dEYcReyW/QAg2zLqKjPhH0wqcYcwjAoGBAO1/V2zVL2yLu0hfUK7U\n7TVSPU+GnajDpMvjFRjWsMCAjidexedHcbkYQCiuilJ2nmgeHBsycSzmGAZMShdo\ni4mpUL/riKf/rnt+lFIgHKs8ZEgzIggwBgrlrN9kvG24K7qTBVAVkIEtWK1segv8\nnVY9EsCWHuqjsE5gQxO7/7qx\n-----END PRIVATE KEY-----\n",
+  "client_email": "wwzxhy@golden-memory-443507-g4.iam.gserviceaccount.com",
+  "client_id": "102402443427760338742",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/wwzxhy%40golden-memory-443507-g4.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

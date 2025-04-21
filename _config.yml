@@ -14,7 +14,7 @@ timezone: ''
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: https://mifazhan.top/
-permalink: :title/
+permalink: posts/:title/
 
 
 permalink_defaults:
@@ -151,3 +151,26 @@ douban:
       - do
     option:
 
+
+url_submission:
+   enable: true
+   type: 'latest' # latest or all( latest: modified pages; all: posts & pages)
+   channels: # included channels are `baidu`, `google`, `bing`, `shenma`
+     # baidu:
+     #   token: "" # Baidu Private Token
+     #   count: 10 # Optional
+     bing:
+       token: "7fb2aea6c53e4f1493d4d333b5ad9a78" # Bing Access Token
+       count: 10 # Optional
+     google:
+       key: "golden-memory.json" # Google key path (e.g. `google_key.json` or `data/google_key.json`)
+       count: 10 # Optional
+     shenma:
+       count: 10 # Optional
+       user: "" # Username used when registering
+       token: "" # ShenMa Private Key
+   prefix: ['/posts', '/wiki'] # URL prefix
+   ignore: ["/post/a*", "/post/a?c"] # URL addresses that do not need to be submitted (wildcards are supported)
+   count: 10 # Submit limit
+   urls_path: 'submit_url.txt' # URL list file path
+   sitemap: '' # Sitemap path(e.g. the url is like this https://abnerwei.com/baidusitemap.xml, you can fill in `baidusitemap.xml`)
