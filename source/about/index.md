@@ -21,5 +21,9 @@ layout: about
 
 5. **2025-04-21**
    使用GitHub Actions实现自动部署
-   配置了Hexo-url-submission主动向搜索引擎提交数据
-   添加了新的访客统计Umami
+   添加新的访客统计Umami
+
+6. **2025-04-22**
+   配置hexo-generator-sitemap自动生成站点地图
+   配置Hexo-url-submission主动向搜索引擎提交数据
+
