@@ -171,11 +171,23 @@ url_submission:
        count: 10 # Optional
        user: "" # Username used when registering
        token: "" # ShenMa Private Key
-   prefix: ['/posts', '/wiki'] # URL prefix
-   ignore: ["/post/a*", "/post/a?c"] # URL addresses that do not need to be submitted (wildcards are supported)
+
+   # prefix: ['/posts', '/wiki'] # URL prefix
+   prefix: ['/posts']
+   # ignore: ["/post/a*", "/post/a?c"] # URL addresses that do not need to be submitted (wildcards are supported)
    count: 10 # Submit limit
    urls_path: 'submit_url.txt' # URL list file path
-   sitemap: '' # Sitemap path(e.g. the url is like this https://abnerwei.com/baidusitemap.xml, you can fill in `baidusitemap.xml`)
+   sitemap: 'sitemap.xml' # Sitemap path(e.g. the url is like this https://abnerwei.com/baidusitemap.xml, you can fill in `baidusitemap.xml`)
+
+sitemap:
+  path: 
+    - sitemap.xml
+    # - sitemap.txt
+  # template: ./sitemap_template.xml
+  # template_txt: ./sitemap_template.txt
+  rel: false
+  tags: true
+  categories: true
 
 # abbrlink config
 abbrlink:
@@ -184,3 +196,4 @@ abbrlink:
   drafts: false   # Whether to generate abbrlink for drafts. (false in default)
   force: false    # Enable force mode. In this mode, the plugin will ignore the cache, and calc the abbrlink for every post even it already had an abbrlink. (false in default)
   writeback: true # Whether to write changes to front-matters back to the actual markdown files. (true in default)
+
