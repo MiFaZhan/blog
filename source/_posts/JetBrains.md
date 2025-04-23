@@ -34,9 +34,13 @@ JetBrains旗下的诸多软件（如IDEA、PyCharm、WebStorm）都非常好用�
 
 2.打开网站[jetbra](https://3.jetbra.in/)
 
+网站会自动测试可以连通的站点
+
 ![jetbra](JetBrains/image-20250420233336066.png)
 
-2.查看测试结果，选择当前网络下可以连通的站点，打开。
+2.查看测试结果，选择online站点打开。
+
+如果没有可用的站点，个人网络环境问题，可以尝试切换手机热点或其他网络
 
 ![](JetBrains/image-20250420233909708.png)
 
@@ -63,3 +67,11 @@ JetBrains旗下的诸多软件（如IDEA、PyCharm、WebStorm）都非常好用�
 这里我已经激活过了仅作演示，第一次使用idea可能是英文界面大同小异，大家自己探索一下即可
 
 ![激活](JetBrains/image-20250420235316206.png)
+
+# 最后
+
+如果激活不成功或者图方便，可以使用这个[IntelliJ IDEA 2023.3.6 便携增强版 - 果核剥壳](https://www.ghxi.com/idea.html)
+
+因为学校机房idea不能用，这里再放一个学习通云盘链接，应该是不限速的
+
+[IntelliJ IDEA 2023.3.6 便携增强版 - 果核剥壳](https://pan-yz.cldisk.com/v2/external/resourceDetail.html?appid=2539F541-76D2-4949-9F18-52C967AE8F47&nonce=-559600941&timestamp=1745417233186&showAppBar=true&autoPreview=true&objectId=a9d2ee24e61f9b39b5e04e59b152f441&signature=6bbf5921618d8a37b660636d5af3cf8c)
