@@ -1,0 +1,17 @@
+{
+  "firstSync": false,
+  "githubToken": "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",
+  "githubOwner": "MiFaZhan",
+  "githubRepo": "blog-backup",
+  "githubBranch": "main",
+  "syncStrategy": "manual",
+  "syncInterval": 1,
+  "syncOnStartup": false,
+  "syncConfigDir": false,
+  "conflictHandling": "ask",
+  "conflictViewMode": "default",
+  "showStatusBarItem": true,
+  "showSyncRibbonButton": true,
+  "showConflictsRibbonButton": true,
+  "enableLogging": false
+}

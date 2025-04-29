@@ -11,12 +11,5 @@ tags:
 
 hide: true
 sitemap: false
-meta:
-  - name: robots
-    content: 'noindex, nofollow'
 ---
-
-
-
-
-
+你好

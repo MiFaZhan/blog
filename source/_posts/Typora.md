@@ -41,7 +41,7 @@ Hexo 主要使用 [Markdown ](http://daringfireball.net/projects/markdown/)语�
 
 ## 2.在线编辑器类
 
-[hexo 在线编辑器 - 白云苍狗](https://www.imalun.com/web_hexo_editor)
+- [hexo 在线编辑器 - 白云苍狗](https://www.imalun.com/web_hexo_editor)
 
 这个在线编辑器是我个人认为目前最好用的，功能完善、界面美观，支持图片复制粘贴、支持代码提示以及快捷设置文本样式，为作者大大点str⭐。
 
@@ -49,15 +49,32 @@ Hexo 主要使用 [Markdown ](http://daringfireball.net/projects/markdown/)语�
 
 ## 3.Markdown编辑器
 
-[obsidian](https://obsidian.md/sync)
+- [obsidian](https://obsidian.md/sync)
 
 功能最为强大，且拥有海量插件，在Windows、Linux、Mac、Android、iOS都可下载使用，完全覆盖了主流操作系统，购买会员可以实现多端同步，
 
 ![image-20250429112615834](Typora/image-20250429112615834.png)
 
-操作复杂不适合新手入门
+- Typora
 
-typora
+obsidian虽功能强大但操作复杂不适合新手入门，因此本篇文章主要介绍typora，后续会专门再写篇文章介绍obsidian。
 
-因此问题的关键就在于找到好用并且适合自己Markdown编辑器
 
+# Typora
+## 安装
+
+目前Typora是收费的，详情请参考[Typora 官方中文站](https://typoraio.cn/)
+
+不过网上很容易找到免费或者修改后的版本，我目前使用的是果核 [Typora 1.10.8( 修改版) - Markdown编辑器 - 果核剥壳](https://www.ghxi.com/typora.html)
+
+在我的使用过程中遇到了一个问题，更换多个渠道的 Typora 的安装包依然存在，目前我也不清楚问题原因
+
+### 小问题
+
+当使用 Typora 在即时渲染模式下，编写了 markdown 文件的 yaml 代码后，编辑正文第一行时会卡一下输入法，然后无法输入中文。
+
+解决方法便是点击左下角切换到源代码模式，输入第一行中文，之后再输入中文就没有问题了。
+
+但如果还想在 `你好` 之前添加内容，还是会重复出现此问题
+
+![](Typora/file-20250429220253827.png)
