@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "677495528e466432",
+        "id": "0b34567201305714",
         "type": "tabs",
         "children": [
           {
-            "id": "ff3fc18c83cf2769",
+            "id": "c31b7d7f9fc5a9e0",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -158,9 +158,12 @@
       "canvas:新建白板": false,
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
-      "command-palette:打开命令面板": false
+      "command-palette:打开命令面板": false,
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "ff3fc18c83cf2769",
-  "lastOpenFiles": []
+  "active": "c31b7d7f9fc5a9e0",
+  "lastOpenFiles": [
+    "source/_posts/Typora.md"
+  ]
 }
