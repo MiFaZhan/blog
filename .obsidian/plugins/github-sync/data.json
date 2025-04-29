@@ -1,5 +1,5 @@
 {
-  "remoteURL": "https://github.com/MiFaZhan/blog-backup.git",
+  "remoteURL": "git@github.com:MiFaZhan/blog-backup.git",
   "gitLocation": "",
   "syncinterval": 0,
   "isSyncOnLoad": false,
