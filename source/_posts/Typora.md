@@ -51,9 +51,13 @@ Hexo 主要使用 [Markdown ](http://daringfireball.net/projects/markdown/)语�
 
 [obsidian](https://obsidian.md/sync)
 
-功能最为强大，且拥有海量插件，在Windows、Linux、Mac、Android、iOS都可下载使用，完全覆盖了主流操作系统，购买会员可以实现多端同步，即使不买会员也可以通过配置`github` 仓库来实现同步
+功能最为强大，且拥有海量插件，在Windows、Linux、Mac、Android、iOS都可下载使用，完全覆盖了主流操作系统，购买会员可以实现多端同步，
 
 ![image-20250429112615834](Typora/image-20250429112615834.png)
+
+操作复杂不适合新手入门
+
+typora
 
 因此问题的关键就在于找到好用并且适合自己Markdown编辑器
 
