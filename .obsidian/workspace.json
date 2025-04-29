@@ -1,24 +1,20 @@
 {
   "main": {
-    "id": "e8688e6a464606bf",
+    "id": "5da6e79522f42309",
     "type": "split",
     "children": [
       {
-        "id": "4e07e51b9964ed16",
+        "id": "677495528e466432",
         "type": "tabs",
         "children": [
           {
-            "id": "aed5ee2e63c41c64",
+            "id": "ff3fc18c83cf2769",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "source/_posts/Fluid美化-视频背景.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Fluid美化-视频背景"
+              "title": "新标签页"
             }
           }
         ]
@@ -27,15 +23,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "b89d983727351ad9",
+    "id": "0065ace29e64b0b5",
     "type": "split",
     "children": [
       {
-        "id": "0de612584ae0086c",
+        "id": "97ff8e86b27cfe0f",
         "type": "tabs",
         "children": [
           {
-            "id": "9531752a3b6b2839",
+            "id": "28e571fb5dd60127",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -48,7 +44,7 @@
             }
           },
           {
-            "id": "fffa67e62cf17b26",
+            "id": "519ab1e9dd2512ea",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -65,7 +61,7 @@
             }
           },
           {
-            "id": "15a88ec780c2c721",
+            "id": "8d8fff6ff5b23059",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -81,20 +77,19 @@
     "width": 300
   },
   "right": {
-    "id": "4063403bad0a9080",
+    "id": "49b246773af59079",
     "type": "split",
     "children": [
       {
-        "id": "fe9bbe2aed1eb699",
+        "id": "0f4c1c6bda8849b6",
         "type": "tabs",
         "children": [
           {
-            "id": "531066ab4f6cd1b9",
+            "id": "46cf48a4f4b9b5e3",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "source/_posts/常用命令.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,25 +99,24 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "常用命令 的反向链接列表"
+              "title": "反向链接"
             }
           },
           {
-            "id": "09079d94e5c70966",
+            "id": "98ad5157496dba54",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "source/_posts/常用命令.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "常用命令 的出链列表"
+              "title": "出链"
             }
           },
           {
-            "id": "b0be0819985ab0a1",
+            "id": "0636c9644da6b897",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -137,18 +131,17 @@
             }
           },
           {
-            "id": "222e1272ccb53997",
+            "id": "896b35e5a8ba0597",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "source/_posts/常用命令.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "常用命令 的大纲"
+              "title": "大纲"
             }
           }
         ]
@@ -168,26 +161,6 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "aed5ee2e63c41c64",
-  "lastOpenFiles": [
-    "db.json",
-    "public/tags/视频背景/index.html",
-    "public/tags/视频背景",
-    "public/categories/博客/index.html",
-    "public/categories/博客",
-    "public/tags/Fluid/index.html",
-    "public/tags/Fluid",
-    "public/404.html",
-    "public/posts/3b13a063.html",
-    "public/archives/2025/04/index.html",
-    "public/archives/2025/04",
-    "source/_posts/Fliuid美化-视频背景/Fluid.png",
-    "source/_posts/Fliuid美化-视频背景.md",
-    "source/_posts/欢迎.md",
-    "source/_posts/常用命令.md",
-    "source/_posts/未命名.md",
-    "未命名.canvas",
-    "2025-04-14.md",
-    "source/about/index.md"
-  ]
+  "active": "ff3fc18c83cf2769",
+  "lastOpenFiles": []
 }
