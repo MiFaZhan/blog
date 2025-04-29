@@ -4,5 +4,6 @@
   "newLinkFormat": "relative",
   "newFileLocation": "folder",
   "newFileFolderPath": "source/_posts",
-  "strictLineBreaks": true
+  "strictLineBreaks": true,
+  "showUnsupportedFiles": false
 }

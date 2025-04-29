@@ -141,20 +141,31 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "source/_posts/Typora.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "大纲"
+              "title": "Typora 的大纲"
+            }
+          },
+          {
+            "id": "495de77a0afa755e",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -164,7 +175,8 @@
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
       "github-gitless-sync:Open sync conflicts view": false,
-      "github-gitless-sync:Sync with GitHub": false
+      "github-gitless-sync:Sync with GitHub": false,
+      "obsidian-git:Open Git source control": false
     }
   },
   "active": "c31b7d7f9fc5a9e0",

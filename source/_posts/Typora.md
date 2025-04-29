@@ -21,11 +21,11 @@ meta:
 
 使用 Hexo 框架搭建了个人博客后，需要选择合适的工具来编辑博客文章。
 
-Hexo 主要使用 [Markdown ](http://daringfireball.net/projects/markdown/)语言解析文章，在几秒内，即可利用靓丽的主题生成静态网页。
+Hexo 主要使用 [Markdown ](http://daringfireball.net/projects/markdown/) 语言解析文章，在几秒内，即可利用靓丽的主题生成静态网页。
 
-目前针对Hexo博客文章编辑的解决方案繁多
+目前针对 Hexo 博客文章编辑的解决方案繁多
 
-## 1. Hexo插件类
+## 1. Hexo 插件类
 
 - [hexo-bridge](https://github.com/DeepSpaceHarbor/hexo-bridge)
 
@@ -37,33 +37,33 @@ Hexo 主要使用 [Markdown ](http://daringfireball.net/projects/markdown/)语�
 
 注意！上述插件只能运行在将博客项目部署在服务器上的环境
 
-如果你和我一样使用GitHub pages部署，即使安装插件后也只能在本地预览环境下使用，无法达到预期效果
+如果你和我一样使用 GitHub pages 部署，即使安装插件后也只能在本地预览环境下使用，无法达到预期效果
 
-## 2.在线编辑器类
+## 2. 在线编辑器类
 
 - [hexo 在线编辑器 - 白云苍狗](https://www.imalun.com/web_hexo_editor)
 
-这个在线编辑器是我个人认为目前最好用的，功能完善、界面美观，支持图片复制粘贴、支持代码提示以及快捷设置文本样式，为作者大大点str⭐。
+这个在线编辑器是我个人认为目前最好用的，功能完善、界面美观，支持图片复制粘贴、支持代码提示以及快捷设置文本样式，为作者大大点 str⭐。
 
-还有一些手搓在线markdown编辑器并嵌入到博客项目中的，大家感兴趣自行研究，我个人认为有些太麻烦。
+还有一些手搓在线 markdown 编辑器并嵌入到博客项目中的，大家感兴趣自行研究，我个人认为有些太麻烦。
 
-## 3.Markdown编辑器
+## 3. Markdown 编辑器
 
 - [obsidian](https://obsidian.md/sync)
 
-功能最为强大，且拥有海量插件，在Windows、Linux、Mac、Android、iOS都可下载使用，完全覆盖了主流操作系统，购买会员可以实现多端同步，
+功能最为强大，且拥有海量插件，在 Windows、Linux、Mac、Android、iOS 都可下载使用，完全覆盖了主流操作系统，购买会员可以实现多端同步，
 
 ![image-20250429112615834](Typora/image-20250429112615834.png)
 
 - Typora
 
-obsidian虽功能强大但操作复杂不适合新手入门，因此本篇文章主要介绍typora，后续会专门再写篇文章介绍obsidian。
+Obsidian 虽功能强大但操作复杂不适合新手入门，因此本篇文章主要介绍 typora，后续会专门再写篇文章介绍 obsidian。
 
 
 # Typora
 ## 安装
 
-目前Typora是收费的，详情请参考[Typora 官方中文站](https://typoraio.cn/)
+目前 Typora 是收费的，详情请参考 [Typora 官方中文站](https://typoraio.cn/)
 
 不过网上很容易找到免费或者修改后的版本，我目前使用的是果核 [Typora 1.10.8( 修改版) - Markdown编辑器 - 果核剥壳](https://www.ghxi.com/typora.html)
 
@@ -75,6 +75,10 @@ obsidian虽功能强大但操作复杂不适合新手入门，因此本篇文章
 
 解决方法便是点击左下角切换到源代码模式，输入第一行中文，之后再输入中文就没有问题了。
 
-但如果还想在 `你好` 之前添加内容，还是会重复出现此问题
+但如果还想在 `你好` 之前添加内容，还是会重复出现此问题，如果有更好的解决方法欢迎评论区交流
 
 ![](Typora/file-20250429220253827.png)
+
+111111
+
+111111
