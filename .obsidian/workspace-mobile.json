@@ -8,13 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "9330d267f23c498b",
+            "id": "7f33e59a83c911ad",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "source/_posts/Typora.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "Typora"
             }
           }
         ]
@@ -159,12 +163,8 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "9330d267f23c498b",
+  "active": "7f33e59a83c911ad",
   "lastOpenFiles": [
-    "source/_posts/Typora.md",
-    "source/_posts/Typora",
-    "source/_posts/文章编辑",
-    "source/_posts/JetBrains.md",
     "source/_posts/隐藏文章测试.md"
   ]
 }
