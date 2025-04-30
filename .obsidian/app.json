@@ -5,6 +5,5 @@
   "newFileLocation": "folder",
   "newFileFolderPath": "source/_posts",
   "strictLineBreaks": true,
-  "showUnsupportedFiles": true,
-  "useTab": true
+  "showUnsupportedFiles": true
 }
