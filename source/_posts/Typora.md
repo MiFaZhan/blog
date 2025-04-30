@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Hexo-博客文章编辑器Typora
+title: Hexo-博客文章编辑(Typora)
 comment: true
 abbrlink: b915b0ef
 date: 2025-04-23 22:27:08
@@ -10,11 +10,12 @@ tags:
   - Hexo
   - Typora
   - Markdown
+
 hide: true
 sitemap: false
 meta:
   - name: robots
-    content: noindex, nofollow
+    content: 'noindex, nofollow'
 ---
  # 引言
 
@@ -22,7 +23,7 @@ meta:
 
 Hexo 主要使用 [Markdown ](http://daringfireball.net/projects/markdown/) 语言解析文章，在几秒内，即可利用靓丽的主题生成静态网页。
 
-目前针对 Hexo 博客文章编辑的解决方案繁多，以下为个人测试之后认为有较好用值得推荐的
+目前针对 Hexo 博客文章编辑的解决方案繁多
 
 ## 1. Hexo 插件类
 
@@ -50,21 +51,16 @@ Hexo 主要使用 [Markdown ](http://daringfireball.net/projects/markdown/) 语�
 
 - [obsidian](https://obsidian.md/sync)
 
-功能最为强大，且拥有海量插件，在 Windows、Linux、Mac、Android、iOS 都可下载使用，完全覆盖了主流操作系统，购买会员可以使用多端同步的功能。
-
-即使是非会员也可通过 git 插件，借助 git 仓库来实现同步功能
+功能最为强大，且拥有海量插件，在 Windows、Linux、Mac、Android、iOS 都可下载使用，完全覆盖了主流操作系统，购买会员可以实现多端同步，
 
 ![image-20250429112615834](Typora/image-20250429112615834.png)
 
-Obsidian 虽功能强大但操作复杂不适合新手，因此本篇文章主要介绍 typora，后续会专门再写篇文章介绍 obsidian。
+- Typora
 
-- [Typora](https://typoraio.cn/)
+Obsidian 虽功能强大但操作复杂不适合新手入门，因此本篇文章主要介绍 typora，后续会专门再写篇文章介绍 obsidian。
 
-所见即所得，轻便且强大，无论是使用还是设置都非常适合新手入门
 
-可以将将图片直接粘贴到文档内，同时编辑器自动将图片保存到指定文件夹，方便
-
-# 正文
+# Typora
 ## 安装
 
 目前 Typora 是收费的，详情请参考 [Typora 官方中文站](https://typoraio.cn/)
@@ -73,9 +69,7 @@ Obsidian 虽功能强大但操作复杂不适合新手，因此本篇文章主�
 
 在我的使用过程中遇到了一个问题，更换多个渠道的 Typora 的安装包依然存在，目前我也不清楚问题原因
 
-## 写作
-
-### 存在的问题
+### 小问题
 
 当使用 Typora 在即时渲染模式下，编写了 markdown 文件的 yaml 代码后，编辑正文第一行时会卡一下输入法，然后无法输入中文。
 
@@ -85,3 +79,6 @@ Obsidian 虽功能强大但操作复杂不适合新手，因此本篇文章主�
 
 ![](Typora/file-20250429220253827.png)
 
+111111
+
+111111
