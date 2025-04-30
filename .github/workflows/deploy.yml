@@ -1,0 +1,63 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    env:
+      SUBMODULE_PATH: source  # 子模块路径变量
+
+    steps:
+      # 步骤1：递归检出主仓库及子模块
+      - name: Checkout with submodules
+        uses: actions/checkout@v4
+        with:
+          submodules: 'recursive'  # 关键修复：递归检出子模块
+          token: ${{ secrets.GITHUB_TOKEN }}  # 确保子模块访问权限
+
+      # 步骤2：验证子模块内容
+      - name: Validate submodule
+        run: |
+          echo "子模块目录结构："
+          ls -la $SUBMODULE_PATH
+          echo "子模块版本：$(git submodule status)"
+
+      # 步骤3：设置 Node.js 环境
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'pnpm'  # 自动缓存 pnpm 依赖
+
+      # 步骤4：安装依赖（主仓库+子模块）
+      - name: Install dependencies
+        run: |
+          pnpm install
+          cd $SUBMODULE_PATH && pnpm install  # 安装子模块依赖
+        shell: bash
+
+      # 步骤5：构建项目（适配子模块路径）
+      - name: Build project
+        run: |
+          pnpm run build
+          # 验证构建产物路径
+          [ -d "./public" ] || { echo "构建产物缺失"; exit 1; }
+
+      # 步骤6：部署到 GitHub Pages
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          deploy_key: ${{ secrets.DEPLOY_KEY }}
+          publish_dir: ./public
+          external_repository: MiFaZhan/MiFaZhan.github.io
+          publish_branch: blog-backup
+          keep_files: false  # 清除旧文件
+
+      # 步骤7：清理缓存（可选）
+      - name: Cleanup
+        if: always()
+        run: |
+          pnpm cache clean --force
