@@ -16,7 +16,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           submodules: 'recursive'  # 关键修复：递归检出子模块
-          token: ${{ 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 }}  # 确保子模块访问权限
+          token: ${{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}}  # 确保子模块访问权限
 
       # 步骤2：验证子模块内容
       - name: Validate submodule
