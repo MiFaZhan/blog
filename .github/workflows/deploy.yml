@@ -1,63 +1,34 @@
 name: Deploy to GitHub Pages
-
 on:
   push:
-    branches: [ main ]
-
+    branches: [ main ]  # 监听 main 分支的推送
 jobs:
   build-and-deploy:
-    runs-on: ubuntu-latest
-    env:
-      SUBMODULE_PATH: source  # 子模块路径变量
-
+    runs-on: ubuntu-latest  # 在 GitHub 的服务器上运行
     steps:
-      # 步骤1：递归检出主仓库及子模块
-      - name: Checkout with submodules
+      # 步骤1：下载私有仓库的代码
+      - name: Checkout
         uses: actions/checkout@v4
-        with:
-          submodules: 'recursive'  # 关键修复：递归检出子模块
-          token: ${{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}}  # 确保子模块访问权限
 
-      # 步骤2：验证子模块内容
-      - name: Validate submodule
-        run: |
-          echo "子模块目录结构："
-          ls -la $SUBMODULE_PATH
-          echo "子模块版本：$(git submodule status)"
-
-      # 步骤3：设置 Node.js 环境
-      - name: Setup Node.js
+      # 步骤2：安装 Node.js 环境
+      - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
-          cache: 'pnpm'  # 自动缓存 pnpm 依赖
+          node-version: 20  # 需与你的 Hexo 版本匹配
 
-      # 步骤4：安装依赖（主仓库+子模块）
-      - name: Install dependencies
-        run: |
-          pnpm install
-          cd $SUBMODULE_PATH && pnpm install  # 安装子模块依赖
-        shell: bash
+      # 步骤3：安装 Hexo 依赖
+      - name: Install Dependencies
+        run: npm install
 
-      # 步骤5：构建项目（适配子模块路径）
-      - name: Build project
-        run: |
-          pnpm run build
-          # 验证构建产物路径
-          [ -d "./public" ] || { echo "构建产物缺失"; exit 1; }
+      # 步骤4：生成静态网页文件（Hexo 编译）
+      - name: Generate Static Files
+        run: npm run build  # 或 hexo generate
 
-      # 步骤6：部署到 GitHub Pages
-      - name: Deploy
+      # 步骤5：推送生成的网页到公开仓库
+      - name: Deploy to Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          deploy_key: ${{ secrets.DEPLOY_KEY }}
-          publish_dir: ./public
-          external_repository: MiFaZhan/MiFaZhan.github.io
-          publish_branch: blog-backup
-          keep_files: false  # 清除旧文件
-
-      # 步骤7：清理缓存（可选）
-      - name: Cleanup
-        if: always()
-        run: |
-          pnpm cache clean --force
+          deploy_key: ${{ secrets.DEPLOY_KEY }}  # 使用之前添加的私钥
+          publish_dir: ./public                  # Hexo 生成的文件夹
+          external_repository: MiFaZhan/MiFaZhan.github.io  # 改为你的公开仓库名
+          publish_branch: blog-backup            # 推送到公开仓库的 main 分支
