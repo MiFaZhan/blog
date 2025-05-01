@@ -9,6 +9,7 @@ _multiconfig.yml
 .obsidian/workspace
 /.obsidian/app.json
 .obsidian/workspace.json
+.obsidian/workspace-mobile.json
 .obsidian/appearance.json
 .trash/
 *.tmp
