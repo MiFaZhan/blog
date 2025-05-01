@@ -174,8 +174,6 @@
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
-      "github-gitless-sync:Open sync conflicts view": false,
-      "github-gitless-sync:Sync with GitHub": false,
       "obsidian-git:Open Git source control": false
     }
   },
