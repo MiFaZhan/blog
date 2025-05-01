@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Hexo-博客文章编辑器Typora
+title: Hexo-博客文章编辑Typora
 comment: true
 abbrlink: b915b0ef
 date: 2025-04-23 22:27:08
@@ -73,8 +73,6 @@ Obsidian 虽功能强大但操作复杂不适合新手，因此本篇文章主�
 
 在我的使用过程中遇到了一个问题，更换多个渠道的 Typora 的安装包依然存在，目前我也不清楚问题原因
 
-## 写作
-
 ### 存在的问题
 
 当使用 Typora 在即时渲染模式下，编写了 markdown 文件的 yaml 代码后，编辑正文第一行时会卡一下输入法，然后无法输入中文。
@@ -85,13 +83,12 @@ Obsidian 虽功能强大但操作复杂不适合新手，因此本篇文章主�
 
 ![](Typora/file-20250429220253827.png)
 
-推送测试
+## 图片
 
-奇了怪了
+首先为大家介绍下和梳理 hexo 引用图片的各种方式
 
-测试 2
+在使用 hexo 框架搭建好博客默认情况下，需要将图片放在 `source/images` 目录中
 
-测试三
-
-12345
-
+```
+{% img [class names] /path/to/image [width] [height] '"title text" "alt text"' %}
+```
