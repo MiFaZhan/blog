@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Hexo-博客文章编辑Typora
+title: Hexo-博客文章编辑(Typora)
 comment: true
 abbrlink: b915b0ef
 date: 2025-04-30 22:27:08
