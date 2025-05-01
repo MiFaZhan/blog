@@ -7,3 +7,8 @@ public/
 .deploy*/
 _multiconfig.yml
 .obsidian/workspace
+/.obsidian/app.json
+.obsidian/workspace.json
+.obsidian/appearance.json
+.trash/
+*.tmp
