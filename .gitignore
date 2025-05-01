@@ -12,3 +12,4 @@ _multiconfig.yml
 .obsidian/appearance.json
 .trash/
 *.tmp
+/.obsidian/plugins/obsidian-git/data.json
