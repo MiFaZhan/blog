@@ -6,11 +6,9 @@ node_modules/
 public/
 .deploy*/
 _multiconfig.yml
-.obsidian/workspace
 /.obsidian/app.json
 .obsidian/workspace.json
-.obsidian/workspace-mobile.json
 .obsidian/appearance.json
 .trash/
 *.tmp
-/.obsidian/plugins/obsidian-git/data.json
+/.obsidian/workspace-mobile.json
