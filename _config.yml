@@ -116,42 +116,42 @@ deploy:
 
 
 
-douban:
-  id: 241225300
-  builtin: true
-  dynamic: false
-  item_per_page: 10
-  meta_max_line: 4
-  customize_layout: page
-  swup: false
-  # timeout: 20000
-  book:
-    path: books/index.html
-    title: "我的书架"   # 页面标题
-    quote: "阅读是思想的旅行"  # 页面开头的引言（支持HTML）
-    actions:
-      - collect
-      - wish
-      - do
-    option:
-  movie:
-    path: movies/index.html
-    title: "观影记录"
-    quote: "电影是生活的倒影"
-    actions:
-      - collect
-      - wish
-      - do
-    option:
-  game: 
-    path: games/index.html
-    title: "游戏收藏"
-    quote: "虚拟世界的冒险"
-    actions:
-      - collect
-      - wish
-      - do
-    option:
+# douban:
+#   id: 241225300
+#   builtin: true
+#   dynamic: false
+#   item_per_page: 10
+#   meta_max_line: 4
+#   customize_layout: page
+#   swup: false
+#   # timeout: 20000
+#   book:
+#     path: books/index.html
+#     title: "我的书架"   # 页面标题
+#     quote: "阅读是思想的旅行"  # 页面开头的引言（支持HTML）
+#     actions:
+#       - collect
+#       - wish
+#       - do
+#     option:
+#   movie:
+#     path: movies/index.html
+#     title: "观影记录"
+#     quote: "电影是生活的倒影"
+#     actions:
+#       - collect
+#       - wish
+#       - do
+#     option:
+#   game: 
+#     path: games/index.html
+#     title: "游戏收藏"
+#     quote: "虚拟世界的冒险"
+#     actions:
+#       - collect
+#       - wish
+#       - do
+#     option:
 
 
 url_submission:
