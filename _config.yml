@@ -1,0 +1,199 @@
+# Hexo Configuration
+## Docs: https://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+
+# Site
+title: MiYingRuShi
+subtitle: ''
+description: ''
+keywords: "博客"
+author: 米应如是
+language: zh-CN
+timezone: ''
+
+# URL
+## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
+url: https://mifazhan.top/
+permalink: posts/:abbrlink/ 
+# permalink: posts/:title/
+# permalink: posts/:abbrlink.html
+
+
+permalink_defaults:
+pretty_urls:
+  trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
+  trailing_html: true # Set to false to remove trailing '.html' from permalinks
+
+# Directory
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
+
+# Writing
+new_post_name: :title.md # File name of new posts
+default_layout: post
+titlecase: false # Transform title into titlecase
+external_link:
+  enable: true # Open external links in new tab
+  field: site # Apply to the whole site
+  exclude: ''
+filename_case: 0
+render_drafts: false
+# post_asset_folder: false
+post_asset_folder: true
+relative_link: false
+future: true
+syntax_highlighter: highlight.js
+highlight:
+  line_number: true
+  auto_detect: false
+  tab_replace: ''
+  wrap: true
+  hljs: false
+prismjs:
+  preprocess: true
+  line_number: true
+  tab_replace: ''
+
+# Home page setting
+# path: Root path for your blogs index page. (default = '')
+# per_page: Posts displayed per page. (0 = disable pagination)
+# order_by: Posts order. (Order by date descending by default)
+index_generator:
+  path: ''
+  per_page: 10
+  order_by: -date
+
+# Category & Tag
+default_category: uncategorized
+category_map:
+tag_map:
+
+# Metadata elements
+## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
+meta_generator: true
+
+# Date / Time format
+## Hexo uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+## updated_option supports 'mtime', 'date', 'empty'
+updated_option: 'mtime'
+
+# Pagination
+## Set per_page to 0 to disable pagination
+per_page: 10
+pagination_dir: page
+
+# Include / Exclude file(s)
+## include:/exclude: options only apply to the 'source/' folder
+include:
+exclude:
+ignore:
+
+# Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: fluid
+
+# Deployment
+## Docs: https://hexo.io/docs/one-command-deployment
+deploy:
+  type: git
+  repo: https://github.com/MiFaZhan/MiFaZhan.github.io
+  # repo: https://github.com/MiFaZhan/blog-source
+  branch: master
+  # branch: main
+  ignore:
+    - CNAME.html
+
+
+
+douban:
+  id: 241225300
+  builtin: true
+  dynamic: false
+  item_per_page: 10
+  meta_max_line: 4
+  customize_layout: page
+  swup: false
+  # timeout: 20000
+  book:
+    path: books/index.html
+    title: "我的书架"   # 页面标题
+    quote: "阅读是思想的旅行"  # 页面开头的引言（支持HTML）
+    actions:
+      - collect
+      - wish
+      - do
+    option:
+  movie:
+    path: movies/index.html
+    title: "观影记录"
+    quote: "电影是生活的倒影"
+    actions:
+      - collect
+      - wish
+      - do
+    option:
+  game: 
+    path: games/index.html
+    title: "游戏收藏"
+    quote: "虚拟世界的冒险"
+    actions:
+      - collect
+      - wish
+      - do
+    option:
+
+
+url_submission:
+   enable: true
+   type: 'latest' # latest or all( latest: modified pages; all: posts & pages)
+   channels: # included channels are `baidu`, `google`, `bing`, `shenma`
+     # baidu:
+     #   token: "" # Baidu Private Token
+     #   count: 10 # Optional
+     bing:
+       token: "7fb2aea6c53e4f1493d4d333b5ad9a78" # Bing Access Token
+       count: 10 # Optional
+     google:
+       key: "golden-memory.json" # Google key path (e.g. `google_key.json` or `data/google_key.json`)
+       count: 10 # Optional
+     shenma:
+       count: 10 # Optional
+       user: "" # Username used when registering
+       token: "" # ShenMa Private Key
+
+   # prefix: ['/posts', '/wiki'] # URL prefix
+   prefix: ['/posts']
+   # ignore: ["/post/a*", "/post/a?c"] # URL addresses that do not need to be submitted (wildcards are supported)
+   count: 10 # Submit limit
+   urls_path: 'submit_url.txt' # URL list file path
+   sitemap: 'sitemap.xml' # Sitemap path(e.g. the url is like this https://abnerwei.com/baidusitemap.xml, you can fill in `baidusitemap.xml`)
+
+sitemap:
+  path: 
+    - sitemap.xml
+    # - sitemap.txt
+  # template: ./sitemap_template.xml
+  # template_txt: ./sitemap_template.txt
+  rel: false
+  tags: true
+  categories: true
+
+# abbrlink config
+abbrlink:
+  alg: crc32      # Algorithm used to calc abbrlink. Support crc16(default) and crc32
+  rep: hex        # Representation of abbrlink in URLs. Support dec(default) and hex
+  drafts: false   # Whether to generate abbrlink for drafts. (false in default)
+  force: false    # Enable force mode. In this mode, the plugin will ignore the cache, and calc the abbrlink for every post even it already had an abbrlink. (false in default)
+  writeback: true # Whether to write changes to front-matters back to the actual markdown files. (true in default)
+
