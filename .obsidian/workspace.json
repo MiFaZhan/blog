@@ -4,25 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "0b34567201305714",
+        "id": "6dbbeffd0ba5537e",
         "type": "tabs",
         "children": [
           {
-            "id": "c31b7d7f9fc5a9e0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "source/_posts/隐藏文章测试.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "隐藏文章测试"
-            }
-          },
-          {
-            "id": "1011cc6bb594d8a1",
+            "id": "fd193dff21aa21d0",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -35,8 +21,7 @@
               "title": "Typora"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -78,16 +63,6 @@
               "icon": "lucide-search",
               "title": "搜索"
             }
-          },
-          {
-            "id": "8d8fff6ff5b23059",
-            "type": "leaf",
-            "state": {
-              "type": "bookmarks",
-              "state": {},
-              "icon": "lucide-bookmark",
-              "title": "书签"
-            }
           }
         ]
       }
@@ -103,53 +78,6 @@
         "id": "0f4c1c6bda8849b6",
         "type": "tabs",
         "children": [
-          {
-            "id": "46cf48a4f4b9b5e3",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "source/_posts/常用命令.md",
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-coming-in",
-              "title": "常用命令 的反向链接列表"
-            }
-          },
-          {
-            "id": "98ad5157496dba54",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-going-out",
-              "title": "出链"
-            }
-          },
-          {
-            "id": "0636c9644da6b897",
-            "type": "leaf",
-            "state": {
-              "type": "tag",
-              "state": {
-                "sortOrder": "frequency",
-                "useHierarchy": true,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-tags",
-              "title": "标签"
-            }
-          },
           {
             "id": "896b35e5a8ba0597",
             "type": "leaf",
@@ -176,51 +104,70 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 343.5
   },
   "left-ribbon": {
     "hiddenItems": {
       "switcher:打开快速切换": false,
-      "graph:查看关系图谱": false,
-      "daily-notes:打开/创建今天的日记": false,
+      "graph:查看关系图谱": true,
+      "daily-notes:打开/创建今天的日记": true,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-git:Open Git source control": false,
+      "workspaces:管理工作区布局": false
     }
   },
-  "active": "1011cc6bb594d8a1",
+  "active": "495de77a0afa755e",
   "lastOpenFiles": [
-    "source/_posts/Typora/file-20250501223928226.png",
-    "source/_posts/Typora/file-20250501223228288.png",
-    "source/_posts/隐藏文章测试.md",
     "db.json",
-    "public/posts/5a8a6c8d/index.html",
-    "public/posts/5a8a6c8d/img_20250429001100_1.png",
-    "public/posts/5a8a6c8d",
+    "public/archives/2025/04/index.html",
+    "public/archives/2025/05/index.html",
+    "public/archives/2025/02/index.html",
+    "public/tags/视频背景/index.html",
+    "public/tags/Markdown/index.html",
+    "public/tags/JetBrains/index.html",
+    "public/posts/b915b0ef/index.html",
+    "public/tags/Typora/index.html",
+    "public/posts/9e752869/index.html",
+    "public/tags/Hexo/index.html",
+    "public/posts/b915b0ef/image-20250429112615834.png",
+    "public/posts/b915b0ef/file-20250501223928226.png",
+    "public/posts/b915b0ef/file-20250501223228288.png",
+    "public/posts/b915b0ef/file-20250429220253827.png",
+    "public/posts/b915b0ef/file-20250429215559697.png",
     "public/posts/54eeecd6/image-20250421000535438.png",
-    "public/img/favicon.svg",
-    "public/videos/Evening-Ocean-Breeze-4K.mp4",
-    "public/videos/Evening-Ocean-Breeze-1080.mp4",
-    "public/videos",
-    "public/img/my avatar.png",
-    "public/posts/46339511/image-20250419162122567.png",
-    "public/img/default.png",
-    "public/img/kuan.png",
-    "public/posts/46339511/04029E831C7CB2A304B7C5CC575BDABD.jpg",
-    "public/js/utils.js",
-    "public/posts/6fc55794/index.html",
-    "public/posts/6fc55794/Fluid.png",
-    "public/posts/6fc55794",
-    "public/js/plugins.js",
-    "source/_posts/Typora.md",
-    "source/_posts/常用命令.md",
-    "source/_posts/欢迎.md",
-    "source/_posts/JetBrains.md",
-    "source/_posts/Fluid.md",
-    "source/_posts/Hexo-图片引用问题.md"
+    "public/posts/54eeecd6/image-20250420235316206.png",
+    "public/posts/54eeecd6/image-20250420235043384.png",
+    "public/posts/54eeecd6/image-20250420234547767.png",
+    "public/posts/54eeecd6/image-20250420234231411.png",
+    "node_modules/range-parser/README.md",
+    "node_modules/range-parser/HISTORY.md",
+    "node_modules/destroy/README.md",
+    "node_modules/toidentifier/README.md",
+    "node_modules/toidentifier/HISTORY.md",
+    "node_modules/setprototypeof/README.md",
+    "node_modules/depd/Readme.md",
+    "node_modules/depd/History.md",
+    "node_modules/vary/README.md",
+    "node_modules/vary/HISTORY.md",
+    "node_modules/on-headers/README.md",
+    "node_modules/on-headers/HISTORY.md",
+    "node_modules/compressible/README.md",
+    "node_modules/compressible/HISTORY.md",
+    "node_modules/safe-buffer/README.md",
+    "node_modules/negotiator/README.md",
+    "node_modules/negotiator/HISTORY.md",
+    "node_modules/compression/README.md",
+    "node_modules/compression/HISTORY.md",
+    "node_modules/define-lazy-prop/readme.md",
+    "node_modules/is-wsl/readme.md",
+    "node_modules/open/readme.md",
+    "node_modules/utils-merge/README.md",
+    "node_modules/unpipe/README.md",
+    "node_modules/unpipe/HISTORY.md"
   ]
 }
