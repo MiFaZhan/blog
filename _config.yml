@@ -108,8 +108,8 @@ theme: fluid
 deploy:
   type: git
   repo: https://github.com/MiFaZhan/MiFaZhan.github.io
-  # repo: https://github.com/MiFaZhan/blog-source
-  branch: master
+  branch: blog
+  # branch: master
   # branch: main
   ignore:
     - CNAME.html
