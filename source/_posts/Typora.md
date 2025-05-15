@@ -125,7 +125,8 @@ Obsidian 虽功能强大但操作复杂不适合新手，后续会专门再写�
 
 ![](Typora/file-20250515234617283.png)
 
- [hexo-renderer-marked](https://github.com/hexojs/hexo-renderer-marked) 是 Hexo 默认安装的 Markdown 渲染器插件，无效手动安装，确保按照文档所示正确开启即可
+
+[hexo-renderer-marked](https://github.com/hexojs/hexo-renderer-marked) 是 Hexo 默认安装的 Markdown 渲染器插件，无效手动安装，确保按照文档所示正确开启即可
 
 ### 教程
 
