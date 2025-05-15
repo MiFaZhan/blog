@@ -31,4 +31,4 @@ jobs:
           deploy_key: ${{ secrets.DEPLOY_KEY }}  # 使用之前添加的私钥
           publish_dir: ./public                  # Hexo 生成的文件夹
           external_repository: MiFaZhan/MiFaZhan.github.io  # 改为你的公开仓库名
-          publish_branch: blog-backup            # 推送到公开仓库的 main 分支
+          publish_branch: blog                   # 推送到公开仓库的 main 分支
