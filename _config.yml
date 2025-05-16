@@ -118,7 +118,7 @@ deploy:
 
 douban:
   id: 241225300
-  builtin: false
+  builtin: true
   dynamic: false
   item_per_page: 10
   meta_max_line: 4
