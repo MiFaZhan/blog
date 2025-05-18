@@ -53,3 +53,8 @@ permalink: :year/:month/:day/:title/
 [Hexo-博客文章编辑(Typora) - MiYingRuShi](https://mifazhan.top/posts/b915b0ef/)
 
 文章图片引用会出问题
+
+测试
+
+测试 2
+
