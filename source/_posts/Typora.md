@@ -13,7 +13,7 @@ tags:
 hide: false
 sitemap: true
 ---
- # 引言
+# 引言
 
 使用 Hexo 框架搭建了个人博客后，需要选择合适的工具来编辑博客文章。
 
@@ -21,9 +21,7 @@ Hexo 主要使用 [Markdown ](http://daringfireball.net/projects/markdown/) 语�
 
 目前针对 Hexo 博客文章编辑的解决方案繁多，以下为个人测试之后认为有较好用值得推荐的
 
-# 正文
-
-## 1. Hexo 插件类
+# 1. Hexo 插件类
 
 - [hexo-bridge](https://github.com/DeepSpaceHarbor/hexo-bridge)
 
@@ -39,7 +37,7 @@ Hexo 主要使用 [Markdown ](http://daringfireball.net/projects/markdown/) 语�
 
 即使安装插件后也只能在本地预览环境下使用，无法达到最佳效果
 
-## 2. 在线编辑器类
+# 2. 在线编辑器类
 
 - [hexo 在线编辑器 - 白云苍狗](https://www.imalun.com/web_hexo_editor)
 
@@ -47,7 +45,7 @@ Hexo 主要使用 [Markdown ](http://daringfireball.net/projects/markdown/) 语�
 
 还有一些手搓在线 markdown 编辑器并嵌入到博客项目中的，大家感兴趣自行研究，我个人认为有些太麻烦。
 
-## 3. Markdown 编辑器
+# 3. Markdown 编辑器
 
 - [obsidian](https://obsidian.md/sync)
 
