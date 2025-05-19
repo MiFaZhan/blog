@@ -115,9 +115,17 @@ Obsidian 虽功能强大但操作复杂不适合新手，后续会专门再写�
 
 ![](Typora/file-20250515234759701.png)
 
-#### 注意
+#### 相对路径引用的标签插件
 
- Hexo文档标题 `相对路径引用的标签插件` 中的内容大家无需在意，因为随着 hexo 的更新，已经支持将 ` ![](image.jpg) ` 自动转换为 `<img src="path/image.jpg">`，也就是下面 `使用 Markdown 嵌入图片`部分的内容
+![](Typora/file-20250519222928683.png)
+
+这是 Hexo 的专属标签插件，​**​自动适配 Hexo 资源文件夹的路径规则​**​。当开启 `post_asset_folder` 配置后，Hexo 会根据文章路径动态生成图片的最终 URL
+
+但有个问题就是，在 Markdown编辑器内使用此语法是无法预览图片的
+
+这种引用方法很少在编辑文章时使用
+
+随着 hexo 的更新，已经支持将 `![](image.jpg)` 自动转换为 `<img src="path/image.jpg">`，也就是下面 `使用 Markdown 嵌入图片`部分的内容
 
 #### 使用 Markdown 嵌入图片
 
@@ -138,16 +146,15 @@ post_asset_folder: true
 
 ![Typora设置](Typora/file-20250501223228288.png)
 
-按上图所示将插入图片时... 调整为 复制到指定路径，并在下方输入 `./${filename}`，保存设置
+按上图所示将插入图片时... 调整为 复制到指定路径，并在下方输入 `./${filename}`，
+
+将图片语法偏好调整为优先使用相对路径，保存设置
 
 之后无论是本地的图片还是网络中的图片，复制后直接在 Typora 中粘贴
 
-Typora 会自动将图片保存到 markdown 文件同名文件夹中，并使用 markdown 语法引用
+Typora 会自动将图片保存到 markdown 文件同名文件夹中，并使用 `![](image.jpg)` 语法引用
 
-从而实现优雅的编辑博客文章
-
-%% 且 [hexo-renderer-marked](https://github.com/hexojs/hexo-renderer-marked) 会将 markdown 语法自动转换为 img 标签形式 %%
-
+从而实现优雅地编辑博客文章
 
 ![](Typora/file-20250501223928226.png)
 
