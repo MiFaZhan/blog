@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Hexo-图片引用问题
+comment: true
 date: 2025-05-18 19:38
 categories:
   - 博客
