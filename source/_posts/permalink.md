@@ -51,13 +51,27 @@ permalink: :year/:month/:day/:title/
 
 ## 图片引用方式
 
-1、`![](filename/image.jpg)`
+### 1、`![](filename/image.jpg)`
 
 Markdown 语法
 
-2、[img 标签](https://hexo.io/zh-cn/docs/asset-folders#%E7%9B%B8%E5%AF%B9%E8%B7%AF%E5%BE%84%E5%BC%95%E7%94%A8%E7%9A%84%E6%A0%87%E7%AD%BE%E6%8F%92%E4%BB%B6)
+早期版本的 hexo 无法直接通过 Markdown 语法引用图片
 
-3、`asset_img` 标签
+随着 hexo 的更新，已经支持将 `![](image.jpg)` 自动转换为 `<img src="path/image.jpg">`
+
+### 2、[img 标签](https://hexo.io/zh-cn/docs/asset-folders#%E7%9B%B8%E5%AF%B9%E8%B7%AF%E5%BE%84%E5%BC%95%E7%94%A8%E7%9A%84%E6%A0%87%E7%AD%BE%E6%8F%92%E4%BB%B6)
+
+HTML 的 `<img>` 标签
+
+### 3、`asset_img` 标签
+
+这是 Hexo 的专属标签插件，​**​自动适配 Hexo 资源文件夹的路径规则​**​。当开启 `post_asset_folder` 配置后，Hexo 会根据文章路径动态生成图片的最终 URL
+
+但使用 `asset_img` 标签只能在已部署或者本地运行测试的博客页面中显示，在 Markdown 编辑器内是无法预览图片的
+
+再加上随着 hexo 的更新，已经支持将 `![](image.jpg)` 自动转换为 `<img src="path/image.jpg">`
+
+所以 `asset_img` 标签这种引用方法很少在编辑文章时直接使用
 
 # 问题分析
 
@@ -82,17 +96,22 @@ permalink: posts/:title/
 
 例如将配置修改为上述形式后，文章图片也无法正确加载
 
-
-
-
-无论是理应会自动转换的`![](filename/image.jpg)`，还是都无法正常显示
+无论是理应会自动转换的 `![](filename/image.jpg)`，还是img 标签都无法正常显示
 
 而这时使用asset_img 语法引用的图片则没有任何问题，依然可以正常显示。
 
-这时倘若将配置改为`permalink: :title/`或改回默认，文章图片所有的引用都不会出问题
+这时倘若将配置改为`permalink: :title/`，文章图片所有的引用都不会出问题
+
+### **为什么 `![](example.jpg)` 可能失效？**
+
+- **路径未适配资源文件夹结构**  
+    Hexo 默认会将资源文件输出到 `public/<文章路径>/` 下，但直接写 `![](example.jpg)` 时，Markdown 解析器可能按**相对文章的位置**查找资源，而非适配 Hexo 生成的最终路径。
 
 
+既然我们需要修改URL配置，而修改后其他引用方法会失效
 
-无论是理应会自动转换的`![](filename/image.jpg)`，还是[img 标签](https://hexo.io/zh-cn/docs/asset-folders#%E7%9B%B8%E5%AF%B9%E8%B7%AF%E5%BE%84%E5%BC%95%E7%94%A8%E7%9A%84%E6%A0%87%E7%AD%BE%E6%8F%92%E4%BB%B6)都无法正常显示
+那么索性寻找方法，将`![]()`引用方法转换为 ​​asset_img 语法
 
-而这时使用asset_img 语法引用的图片则没有任何问题，依然可以正常显示。
+[hexo-image-link](https://github.com/cocowool/hexo-image-link)插件完美解决了这个问题
+
+按照介绍安装后，`hexo clean && hexo g && hexo s`本地运行测试问题解决

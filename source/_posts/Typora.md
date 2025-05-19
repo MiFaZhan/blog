@@ -121,18 +121,17 @@ Obsidian 虽功能强大但操作复杂不适合新手，后续会专门再写�
 
 这是 Hexo 的专属标签插件，​**​自动适配 Hexo 资源文件夹的路径规则​**​。当开启 `post_asset_folder` 配置后，Hexo 会根据文章路径动态生成图片的最终 URL
 
-但有个问题就是，在 Markdown编辑器内使用此语法是无法预览图片的
+但使用 `asset_img` 标签只能在已部署或者本地运行测试的博客页面中显示，在 Markdown编辑器内是无法预览图片的
 
-这种引用方法很少在编辑文章时使用
+再加上随着 hexo 的更新，已经支持将 `![](image.jpg)` 自动转换为 `<img src="path/image.jpg">`，也就是下面 `使用 Markdown 嵌入图片` 部分的内容
 
-随着 hexo 的更新，已经支持将 `![](image.jpg)` 自动转换为 `<img src="path/image.jpg">`，也就是下面 `使用 Markdown 嵌入图片`部分的内容
+所以 `asset_img` 标签这种引用方法很少在编辑文章时直接使用
 
 #### 使用 Markdown 嵌入图片
 
 ![](Typora/file-20250515234617283.png)
 
-
-[hexo-renderer-marked](https://github.com/hexojs/hexo-renderer-marked) 是 Hexo 默认安装的 Markdown 渲染器插件，无效手动安装，确保按照文档所示正确开启即可
+[hexo-renderer-marked](https://github.com/hexojs/hexo-renderer-marked) 是 Hexo 默认安装的 Markdown 渲染器插件，无效手动安装，检查 `post_asset_folder: true ` 是否正确配置即可
 
 ### 教程
 
