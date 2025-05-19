@@ -7,6 +7,7 @@ categories:
 tags:
   - Hexo
   - abbrlink
+  - URL
 hide: true
 sitemap: false
 abbrlink: dc842c8c
@@ -128,7 +129,21 @@ https://post.zz173.com/posts/1690090958.html
 ```
 
 # 图片引用问题
+## 问题原因
 
-经过测试
+最早是在安装了 hexo-abbrlink 插件之后图片无法正常显示
 
-URL 中含有中文
+想当然的以为是 hexo-abbrlink 插件问题，
+
+
+
+
+后经过测试
+
+
+| Permalink |     |
+| :-------: | --- |
+|   含有中文    |     |
+
+
+ 中
