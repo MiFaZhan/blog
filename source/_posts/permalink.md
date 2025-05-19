@@ -16,8 +16,7 @@ abbrlink: dc842c8c
 
 之前文章我们介绍了，使用 Typora 编辑博客文章[Hexo-博客文章编辑(Typora) - MiYingRuShi](https://mifazhan.top/posts/b915b0ef/)
 
-
-
+讲解了两种配置永久链接的方法 [Hexo-永久链接 - MiYingRuShi](https://mifazhan.top/posts/33b326d2/)
 
 
 
@@ -25,7 +24,7 @@ abbrlink: dc842c8c
 
 打开 `项目根目录\package.json` 文件即可看到当前 hexo 版本
 
-我的版本为 7.3.0
+请查看版本信息，以确保此文章内容适用于你的项目
 
 ```
 "hexo": {
