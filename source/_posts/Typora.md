@@ -1,79 +1,18 @@
 ---
 layout: post
-title: Hexo-博客文章编辑(Typora)
+title: Hexo-使用Typora编辑博客文章
 comment: true
-abbrlink: b915b0ef
-date: 2025-04-30 22:27:08
-categories:
-  - 博客
-tags:
-  - Hexo
-  - Typora
-  - Markdown
+date: 2025-05-20 14:59
+categories: 
+tags: 
 hide: false
 sitemap: true
 ---
-# 引言
-
-使用 Hexo 框架搭建了个人博客后，需要选择合适的工具来编辑博客文章。
-
-Hexo 主要使用 [Markdown ](http://daringfireball.net/projects/markdown/) 语言解析文章，在几秒内，即可利用靓丽的主题生成静态网页。
-
-目前针对 Hexo 博客文章编辑的解决方案繁多，以下为个人测试之后认为有较好用值得推荐的
-
-# 1. Hexo 插件类
-
-- [hexo-bridge](https://github.com/DeepSpaceHarbor/hexo-bridge)
-
-- [hexo-admin](https://github.com/jaredly/hexo-admin)
-
-- [hexo-admin-ehc](https://github.com/lwz7512/hexo-admin-ehc)
-
-上述插件都是为博客添加网站管理面板，登录到后端对网站进行管理和文章编辑
-
-注意！上述插件需要开放端口用于登录后端，因此只推荐将博客项目部署在自己服务器用户使用
-
-如果你和我一样使用 GitHub pages 部署或其他静态托管服务
-
-即使安装插件后也只能在本地预览环境下使用，无法达到最佳效果
-
-# 2. 在线编辑器类
-
-- [hexo 在线编辑器 - 白云苍狗](https://www.imalun.com/web_hexo_editor)
-
-这个在线编辑器是我个人认为目前最好用的，功能完善、界面美观，支持图片复制粘贴、支持代码提示以及快捷设置文本样式，为作者大大点 str⭐。
-
-还有一些手搓在线 markdown 编辑器并嵌入到博客项目中的，大家感兴趣自行研究，我个人认为有些太麻烦。
-
-# 3. Markdown 编辑器
-
-- [obsidian](https://obsidian.md/sync)
-
-功能最为强大，且拥有海量插件，在 Windows、Linux、Mac、Android、iOS 都可下载使用，
-
-完全覆盖了主流操作系统，购买会员可以使用软件的多端同步功能。
-
-即使是非会员也可通过 git 插件，借助 GitHub 仓库来实现同步功能
-
-![image-20250429112615834](Typora/image-20250429112615834.png)
-
-Obsidian 虽功能强大但操作复杂不适合新手，后续会专门再写篇文章介绍 obsidian。
-
-- [Typora](https://typoraio.cn/)
-
-所见即所得，轻便且强大，无论是使用还是设置都非常适合新手入门
-
-可以复制图片直接粘贴，Typora 会自动将图片保存到指定文件夹，同时使用 Markdown 语法引用.
-
-本篇文章主要介绍 Typora
-
-# Typora 
-
 ## 安装
 
-目前 Typora 是收费的，详情请参考 [Typora 官方中文站](https://typoraio.cn/)
+目前 Typora 是收费的，详情请参考 [Typora 官方中文站](https://typoraio.cn/)
 
-不过网上很容易找到免费或者修改后的版本，我目前使用的是果核 [Typora 1.10.8( 修改版) - Markdown编辑器 - 果核剥壳](https://www.ghxi.com/typora.html)
+不过网上很容易找到免费或者修改后的版本，我目前使用的是果核 [Typora 1.10.8( 修改版) - Markdown编辑器 - 果核剥壳](https://www.ghxi.com/typora.html)
 
 ## Typora问题
 
@@ -85,11 +24,11 @@ Obsidian 虽功能强大但操作复杂不适合新手，后续会专门再写�
 
 但倘若编辑不带有 Yaml 代码的 markdown 文件则没有任何问题
 
-![](Typora/file-20250429220253827.png)
+![](app://ed317644ec0902ff41eb952f9013f84cae1f/C:/My%20Code/blog/source/_posts/%E6%96%87%E7%AB%A0%E7%BC%96%E8%BE%91/file-20250429220253827.png?1745987866415)
 
 解决方法便是点击左下角切换到源代码模式，输入第一行中文，之后无论哪种模式，再输入中文就没有问题了。
 
-但如果还想在上图 `你好` 之前的位置添加内容，还是会重复出现此问题，如果有更好的解决方法欢迎评论区交流
+但如果还想在上图 `你好` 之前的位置添加内容，还是会重复出现此问题，如果有更好的解决方法欢迎评论区交流
 
 ## 图片
 
@@ -105,37 +44,37 @@ Obsidian 虽功能强大但操作复杂不适合新手，后续会专门再写�
 
 ### hexo 资源文件夹
 
-首先为大家介绍下和梳理 hexo 引用图片的各种方式，部分内容来自 [hexo 资源文件夹](https://hexo.io/zh-cn/docs/asset-folders)
+首先为大家介绍下和梳理 hexo 引用图片的各种方式，部分内容来自 [hexo 资源文件夹](https://hexo.io/zh-cn/docs/asset-folders)
 
 #### 全局资源文件夹
 
-![](Typora/file-20250515234537885.png)
+![](app://ed317644ec0902ff41eb952f9013f84cae1f/C:/My%20Code/blog/source/_posts/%E6%96%87%E7%AB%A0%E7%BC%96%E8%BE%91/file-20250515234537885.png?1747323937890)
 
 #### 文章资源文件夹
 
-![](Typora/file-20250515234759701.png)
+![](app://ed317644ec0902ff41eb952f9013f84cae1f/C:/My%20Code/blog/source/_posts/%E6%96%87%E7%AB%A0%E7%BC%96%E8%BE%91/file-20250515234759701.png?1747324079705)
 
 #### 相对路径引用的标签插件
 
-![](Typora/file-20250519222928683.png)
+![](app://ed317644ec0902ff41eb952f9013f84cae1f/C:/My%20Code/blog/source/_posts/%E6%96%87%E7%AB%A0%E7%BC%96%E8%BE%91/file-20250519222928683.png?1747664968688)
 
 这是 Hexo 的专属标签插件，​**​自动适配 Hexo 资源文件夹的路径规则​**​。当开启 `post_asset_folder` 配置后，Hexo 会根据文章路径动态生成图片的最终 URL
 
-但使用 `asset_img` 标签只能在已部署或者本地运行测试的博客页面中显示，在 Markdown编辑器内是无法预览图片的
+但使用 `asset_img` 标签只能在已部署或者本地运行测试的博客页面中显示，在 Markdown编辑器内是无法预览图片的
 
-再加上随着 hexo 的更新，已经支持将 `![](image.jpg)` 自动转换为 `<img src="path/image.jpg">`，也就是下面 `使用 Markdown 嵌入图片` 部分的内容
+再加上随着 hexo 的更新，已经支持将 `![](image.jpg)` 自动转换为 `<img src="path/image.jpg">`，也就是下面 `使用 Markdown 嵌入图片` 部分的内容
 
-所以 `asset_img` 标签这种引用方法很少在编辑文章时直接使用
+所以 `asset_img` 标签这种引用方法很少在编辑文章时直接使用
 
 #### 使用 Markdown 嵌入图片
 
-![](Typora/file-20250515234617283.png)
+![](app://ed317644ec0902ff41eb952f9013f84cae1f/C:/My%20Code/blog/source/_posts/%E6%96%87%E7%AB%A0%E7%BC%96%E8%BE%91/file-20250515234617283.png?1747323977286)
 
-[hexo-renderer-marked](https://github.com/hexojs/hexo-renderer-marked) 是 Hexo 默认安装的 Markdown 渲染器插件，无效手动安装，检查 `post_asset_folder: true ` 是否正确配置即可
+[hexo-renderer-marked](https://github.com/hexojs/hexo-renderer-marked) 是 Hexo 默认安装的 Markdown 渲染器插件，无效手动安装，检查 `post_asset_folder: true` 是否正确配置即可
 
 ### 教程
 
-首先按照 `文章资源文件夹` 所述，将 `config.yml` 文件中的 `post_asset_folder` 选项设为 `true` 来打开。
+首先按照 `文章资源文件夹` 所述，将 `config.yml` 文件中的 `post_asset_folder` 选项设为 `true` 来打开。
 
 ```
 post_asset_folder: true
@@ -143,19 +82,19 @@ post_asset_folder: true
 
 接着打开 Typora - 偏好设置 - 图像
 
-![Typora设置](Typora/file-20250501223228288.png)
+![Typora设置](app://ed317644ec0902ff41eb952f9013f84cae1f/C:/My%20Code/blog/source/_posts/%E6%96%87%E7%AB%A0%E7%BC%96%E8%BE%91/file-20250501223228288.png?1746109948293)
 
-按上图所示将插入图片时... 调整为 复制到指定路径，并在下方输入 `./${filename}`，
+按上图所示将插入图片时... 调整为 复制到指定路径，并在下方输入 `./${filename}`，
 
 将图片语法偏好调整为优先使用相对路径，保存设置
 
 之后无论是本地的图片还是网络中的图片，复制后直接在 Typora 中粘贴
 
-Typora 会自动将图片保存到 markdown 文件同名文件夹中，并使用 `![](image.jpg)` 语法引用
+Typora 会自动将图片保存到 markdown 文件同名文件夹中，并使用 `![](image.jpg)` 语法引用
 
 从而实现优雅地编辑博客文章
 
-![](Typora/file-20250501223928226.png)
+![](app://ed317644ec0902ff41eb952f9013f84cae1f/C:/My%20Code/blog/source/_posts/%E6%96%87%E7%AB%A0%E7%BC%96%E8%BE%91/file-20250501223928226.png?1746110368231)
 
 ## 图片引用存在的问题
 
@@ -180,6 +119,10 @@ permalink: posts/:abbrlink/
 
 后续测试发现，与是否安装 abbrlink 无关，保持 URL 默认配置不会有问题
 
-将其修改为了其他样式，比如 `permalink: posts/:title/`，文章图片同样无法正确加载
+将其修改为了其他样式，比如 `permalink: posts/:title/`，文章图片同样无法正确加载
 
 解决方案在上述议题中已有简略描述，碍于篇幅后续会专门再写一篇文章。
+
+
+
+
