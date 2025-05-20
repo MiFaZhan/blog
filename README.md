@@ -13,8 +13,7 @@
   改造 Fluid 主题实现动态视频背景，[技术细节说明](https://mifazhan.top/posts/46339511/)
 
 ### ⚡️ Obsidian 全链路工作流
-
-  Windows/Android/iOS 三端通过 Obsidian 统一编辑体验
+Obsidian 统一编辑体验
 - **Git 无缝集成**  
   通过 [Obsidian Git](https://github.com/denolehov/obsidian-git) 插件实现：
   - 一键推送文章到本仓库
@@ -30,6 +29,15 @@
   1. 生成静态页面时回写 `abbrlink` 到源文件
   2. 提交源码变更到当前仓库
   3. 部署静态文件到 Pages 仓库
+
+graph LR
+  A[Obsidian 编辑文章] --> B[Git 插件推送]
+  B --> C[GitHub 接收推送]
+  C --> D[Actions 生成静态页]
+  D --> E[回写 abbrlink 到源码]
+  E --> F[提交源码变更]
+  F --> G[部署到 Pages 仓库]
+  G --> H[用户访问 MiFaZhan.top]
 
 ## 📁 目录架构
 
