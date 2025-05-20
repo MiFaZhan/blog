@@ -22,7 +22,7 @@ abbrlink: dc842c8c
 
 然而在配置永久链接之后，博客图片无法正常显示，本篇文章主要记录这个问题以及解决方法
 
-![](permalink/file-20250519203608193.png)
+![](URL/file-20250519203608193.png)
 
 ## 版本
 
@@ -51,7 +51,7 @@ permalink: :year/:month/:day/:title/
 
 ## 图片引用方式
 
-### 1、`![](filename/image.jpg)`
+ 1、`![](filename/image.jpg)`
 
 Markdown 语法
 
@@ -61,7 +61,7 @@ Markdown 语法
 
 ### 2、[img 标签](https://hexo.io/zh-cn/docs/asset-folders#%E7%9B%B8%E5%AF%B9%E8%B7%AF%E5%BE%84%E5%BC%95%E7%94%A8%E7%9A%84%E6%A0%87%E7%AD%BE%E6%8F%92%E4%BB%B6)
 
-HTML 的 `<img>` 标签
+HTML 的 `<img>` 标签，没什么好介绍的
 
 ### 3、`asset_img` 标签
 
