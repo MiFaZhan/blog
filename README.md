@@ -30,14 +30,8 @@ Obsidian 统一编辑体验
   2. 提交源码变更到当前仓库
   3. 部署静态文件到 Pages 仓库
 
-graph LR
-  A[Obsidian 编辑文章] --> B[Git 插件推送]
-  B --> C[GitHub 接收推送]
-  C --> D[Actions 生成静态页]
-  D --> E[回写 abbrlink 到源码]
-  E --> F[提交源码变更]
-  F --> G[部署到 Pages 仓库]
-  G --> H[用户访问 MiFaZhan.top]
+![image](https://github.com/user-attachments/assets/dfd9d480-18f9-410a-b5eb-5cb8a8a190d1)
+
 
 ## 📁 目录架构
 
