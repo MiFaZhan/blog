@@ -2,32 +2,52 @@
 
 [![GitHub Actions Status](https://img.shields.io/github/actions/workflow/status/MiFaZhan/blog/deploy.yml?label=自动部署)](https://github.com/MiFaZhan/blog/actions)
 [![Hexo Version](https://img.shields.io/badge/Hexo-6.3+-blue)](https://hexo.io)
-[![Fluid Theme](https://img.shields.io/badge/Theme-Fluid-2CA5E0)](https://github.com/fluid-dev/hexo-theme-fluid)
+[![Fluid Theme](https://img.shields.io/badge/Theme-Fluid_Custom-2CA5E0)](https://github.com/fluid-dev/hexo-theme-fluid)
 
-这是基于 Hexo 框架构建的个人博客源码仓库，静态页面通过 GitHub Actions 自动部署至 [MiFaZhan.github.io](https://github.com/MiFaZhan/MiFaZhan.github.io)。
+这是基于 Hexo 构建的个性化博客系统，集成 Obsidian 多端编辑能力和 GitHub 自动化部署体系。静态页面实时部署至 [MiFaZhan/MiFaZhan.github.io](https://github.com/MiFaZhan/MiFaZhan.github.io)。
 
-## 🚀 功能特性
+## 🌟 核心特性
 
-- **自动化部署**  
-  通过 GitHub Actions 实现「源码更新 → 生成静态页面 → 同步永久链接 → 发布」全流程自动化。
-- **永久链接支持**  
-  集成 [hexo-abbrlink](https://github.com/ohroy/hexo-abbrlink) 插件，文章 URL 与内容强绑定，避免因标题修改导致链接失效。
-- **豆瓣数据同步**  
-  通过 [hexo-douban](https://github.com/mythsman/hexo-douban) 自动生成书影音页面。
-- **多主题支持**  
-  默认使用 [Fluid 主题](https://hexo.fluid-dev.com)，保留 Landscape 主题配置 (`_config.landscape.yml`)。
+### 🎨 深度定制的 Fluid 主题
+- **视频背景功能**  
+  改造 Fluid 主题实现动态视频背景，[技术细节说明](https://mifazhan.top/posts/46339511/)
 
-## 📂 目录结构
+### ⚡️ Obsidian 全链路工作流
+
+  Windows/Android/iOS 三端通过 Obsidian 统一编辑体验
+- **Git 无缝集成**  
+  通过 [Obsidian Git](https://github.com/denolehov/obsidian-git) 插件实现：
+  - 一键推送文章到本仓库
+  - 自动同步多端内容变更
+  - 版本控制与历史追溯
+  - 跨平台编辑
+
+### 🤖 自动化部署体系
+- **永久链接固化**  
+  通过 [hexo-abbrlink](https://github.com/ohroy/hexo-abbrlink) 生成 CRC 校验永久链接
+- **实时内容同步**  
+  GitHub Actions 自动完成：
+  1. 生成静态页面时回写 `abbrlink` 到源文件
+  2. 提交源码变更到当前仓库
+  3. 部署静态文件到 Pages 仓库
+
+## 📁 目录架构
 
 ```text
 blog/
-├── source/                  # 文章和资源文件
-│   └── _posts/             # Markdown 文章
-├── themes/                 # Hexo 主题
-├── scripts/                # 自定义脚本
-│   └── sync_abbrlink.js    # 自动同步永久链接到源文件
-├── .github/workflows/      # GitHub Actions 配置
-│   └── deploy.yml          # 自动化部署流程
-├── _config.yml             # Hexo 主配置
-├── _config.fluid.yml       # Fluid 主题配置
-└── package.json            # 项目依赖
+├── .obsidian/             # Obsidian 编辑器配置
+│   ├── plugins/           # Obsidian 插件（含 git 同步插件）
+│   └── settings.json      # 编辑器个性化配置
+├── scripts/               # Hexo 扩展脚本
+│   └── sync_abbrlink.js   # 永久链接同步器
+├── source/                # 内容资源
+│   ├── _posts/            # Markdown 文章库
+│   └── videos/            # 自定义视频背景资源
+├── themes/                # Hexo 主题
+│   └── fluid/             # 深度改造的 Fluid 主题
+│       ├── _config.yml    # 主题主配置
+│       └── layout/_partials/background.ejs  # 视频背景模版
+├── .github/workflows/     # 自动化流程
+│   └── deploy.yml         # CI/CD 部署管道
+├── _config.yml            # Hexo 主配置
+└── package.json           # 项目依赖清单
