@@ -2,7 +2,7 @@
 layout: post
 title: Hexo-图片引用问题
 comment: true
-date: 2025-05-18 19:38
+date: 2025-05-18 19:38:00
 categories:
   - 博客
 tags:
@@ -108,4 +108,4 @@ permalink: posts/:title/
 
 [hexo-image-link](https://github.com/cocowool/hexo-image-link)插件完美解决了这个问题
 
-按照介绍安装后，`hexo clean && hexo g && hexo s`本地运行测试问题解决
+按照介绍安装后，`hexo clean && hexo g && hexo s` 本地运行测试问题解决
