@@ -49,7 +49,7 @@ permalink: :year/:month/:day/:title/
 
 按照 hexo 官方文档[永久链接（Permalinks） \| Hexo](https://hexo.io/zh-cn/docs/permalinks) 调整 Permalink
 
-![](永久链接/file-20250519195112124.png)
+![](Link/file-20250519195112124.png)
 
 文档中记录了所有变量，以及对应的功能
 
