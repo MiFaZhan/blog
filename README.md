@@ -32,6 +32,7 @@ Obsidian 统一编辑体验
   3. 部署静态文件到 Pages 仓库
 
 ### 🔄 系统工作流
+
 ![image](https://github.com/user-attachments/assets/dfd9d480-18f9-410a-b5eb-5cb8a8a190d1)
 
 
