@@ -1,12 +1,11 @@
 ---
-title: Fluid主题美化-视频背景
+title: Fluid主题-添加视频背景
 comment: true
 categories:
   - 博客
 tags:
   - Fluid
-  - 视频背景
-abbrlink: '46339511'
+abbrlink: "46339511"
 date: 2025-04-19 22:22:22
 ---
 # 简介
