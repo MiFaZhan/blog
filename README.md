@@ -49,7 +49,7 @@ blog/
 │   ├── _posts/            # Markdown 文章库
 │   └── videos/            # 自定义视频背景资源
 ├── themes/                # Hexo 主题
-│   └── fluid/             # 深度改造的 Fluid 主题
+│   └── fluid/             # Fluid 主题
 │       ├── _config.yml    # 主题主配置
 │       └── layout/_partials/background.ejs  # 视频背景模版
 ├── .github/workflows/     # 自动化流程
