@@ -2,6 +2,12 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [ main ]  # 监听 main 分支的推送
+  workflow_dispatch:  # 添加手动更新豆瓣数据选项
+    inputs:
+      refresh_douban:
+        description: "是否强制刷新豆瓣数据"
+        required: false
+        default: "false"
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest  # 在 GitHub 的服务器上运行
@@ -24,8 +30,11 @@ jobs:
       # 步骤5：生成静态网页文件（Hexo 编译）
       - name: Generate Static Files
         run: |
-            npx hexo douban
-            npm run build
+          if [ "${{ github.event.inputs.refresh_douban }}" = "true" ]; then
+            npx hexo douban  # 仅在手动选择时更新
+          fi
+          npm run build
+      
 
       # 步骤6：推送生成的网页到公开仓库
       - name: Deploy to Pages
