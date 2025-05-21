@@ -1,37 +1,37 @@
-# name: Deploy to GitHub Pages
-# on:
-#   push:
-#     branches: [ main ]  # 监听 main 分支的推送
-# jobs:
-#   build-and-deploy:
-#     runs-on: ubuntu-latest  # 在 GitHub 的服务器上运行
-#     steps:
-#       # 步骤1：下载私有仓库的代码
-#       - name: Checkout
-#         uses: actions/checkout@v4
+name: Deploy to GitHub Pages
+on:
+  push:
+    branches: [ main ]  # 监听 main 分支的推送
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest  # 在 GitHub 的服务器上运行
+    steps:
+      # 步骤1：下载私有仓库的代码
+      - name: Checkout
+        uses: actions/checkout@v4
 
-#       # 步骤2：安装 Node.js 环境
-#       - name: Setup Node
-#         uses: actions/setup-node@v4
-#         with:
-#           node-version: 20  # 需与你的 Hexo 版本匹配
+      # 步骤2：安装 Node.js 环境
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20  # 需与你的 Hexo 版本匹配
 
-#       # 步骤3：安装 Hexo 依赖
-#       - name: Install Dependencies
-#         run: npm install
+      # 步骤3：安装 Hexo 依赖
+      - name: Install Dependencies
+        run: npm install
 
-#       # 步骤4：生成静态网页文件（Hexo 编译）
-#       - name: Generate Static Files
-#         run: npm run build  # 或 hexo generate
+      # 步骤4：生成静态网页文件（Hexo 编译）
+      - name: Generate Static Files
+        run: npm run build  # 或 hexo generate
 
-#       # 步骤5：推送生成的网页到公开仓库
-#       - name: Deploy to Pages
-#         uses: peaceiris/actions-gh-pages@v3
-#         with:
-#           deploy_key: ${{ secrets.DEPLOY_KEY }}  # 使用之前添加的私钥
-#           publish_dir: ./public                  # Hexo 生成的文件夹
-#           external_repository: MiFaZhan/MiFaZhan.github.io  # 改为你的公开仓库名
-#           publish_branch: blog                   # 推送到公开仓库的 main 分支
+      # 步骤5：推送生成的网页到公开仓库
+      - name: Deploy to Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          deploy_key: ${{ secrets.DEPLOY_KEY }}  # 使用之前添加的私钥
+          publish_dir: ./public                  # Hexo 生成的文件夹
+          external_repository: MiFaZhan/MiFaZhan.github.io  # 改为你的公开仓库名
+          publish_branch: blog                   # 推送到公开仓库的 main 分支
 
 # name: Deploy
 # on:
@@ -72,56 +72,56 @@
 #           external_repository: MiFaZhan/MiFaZhan.github.io  # 改为你的公开仓库名
 #           publish_branch: blog                   # 推送到公开仓库的 main 分支
 
-name: Deploy
-on:
-  push:
-    branches:
-      - main
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-    - name: Checkout Blog Repo
-      uses: actions/checkout@v4
-      with:
-        persist-credentials: true  # 允许后续步骤使用 GITHUB_TOKEN 推送代码
+# name: Deploy
+# on:
+#   push:
+#     branches:
+#       - main
+# jobs:
+#   build:
+#     runs-on: ubuntu-latest
+#     steps:
+#     - name: Checkout Blog Repo
+#       uses: actions/checkout@v4
+#       with:
+#         persist-credentials: true  # 允许后续步骤使用 GITHUB_TOKEN 推送代码
 
-    - name: Setup Node.js
-      uses: actions/setup-node@v4
-      with:
-        node-version: 20
+#     - name: Setup Node.js
+#       uses: actions/setup-node@v4
+#       with:
+#         node-version: 20
 
-    - name: Install Dependencies
-      run: |
-        npm install
-        npm install hexo-cli -g
+#     - name: Install Dependencies
+#       run: |
+#         npm install
+#         npm install hexo-cli -g
 
-    # 生成豆瓣数据（保留你的原有步骤）
-    - name: Generate Douban Data
-      run: npx hexo douban
+#     # 生成豆瓣数据（保留你的原有步骤）
+#     - name: Generate Douban Data
+#       run: npx hexo douban
 
-    # 生成静态文件并同步 abbrlink
-    - name: Generate Site & Sync abbrlink
-      run: |
-        hexo clean
-        hexo generate  # 生成过程中自动触发 sync_abbrlink.js 脚本
+#     # 生成静态文件并同步 abbrlink
+#     - name: Generate Site & Sync abbrlink
+#       run: |
+#         hexo clean
+#         hexo generate  # 生成过程中自动触发 sync_abbrlink.js 脚本
 
-    # 提交更新后的源文件（包含 abbrlink）到 blog 仓库
-    - name: Commit Source Changes
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # 使用默认 token
-      run: |
-        git config --global user.name "GitHub Actions"
-        git config --global user.email "actions@github.com"
-        git add .
-        git commit -m "chore: sync abbrlink from generated files" || echo "No changes to commit"
-        git push origin main
+#     # 提交更新后的源文件（包含 abbrlink）到 blog 仓库
+#     - name: Commit Source Changes
+#       env:
+#         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # 使用默认 token
+#       run: |
+#         git config --global user.name "GitHub Actions"
+#         git config --global user.email "actions@github.com"
+#         git add .
+#         git commit -m "chore: sync abbrlink from generated files" || echo "No changes to commit"
+#         git push origin main
 
-    # 部署到 GitHub Pages 仓库（保留你的原有配置）
-    - name: Deploy to MiFaZhan.github.io
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        deploy_key: ${{ secrets.DEPLOY_KEY }}  # 推送到外部仓库仍用 deploy_key
-        publish_dir: ./public
-        external_repository: MiFaZhan/MiFaZhan.github.io
-        publish_branch: blog
+#     # 部署到 GitHub Pages 仓库（保留你的原有配置）
+#     - name: Deploy to MiFaZhan.github.io
+#       uses: peaceiris/actions-gh-pages@v3
+#       with:
+#         deploy_key: ${{ secrets.DEPLOY_KEY }}  # 推送到外部仓库仍用 deploy_key
+#         publish_dir: ./public
+#         external_repository: MiFaZhan/MiFaZhan.github.io
+#         publish_branch: blog
