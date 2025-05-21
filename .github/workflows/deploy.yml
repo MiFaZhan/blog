@@ -1,46 +1,42 @@
 name: Deploy to GitHub Pages
 on:
   push:
-    branches: [ main ]  # 监听 main 分支的推送
-  workflow_dispatch:  # 添加手动更新豆瓣数据选项
+    branches: [ main ]
+  # 添加手动触发选项
+  workflow_dispatch:
     inputs:
       refresh_douban:
-        description: "是否强制刷新豆瓣数据"
+        description: '手动更新豆瓣数据（默认不更新）'
         required: false
-        default: "false"
+        default: 'false'
+
 jobs:
   build-and-deploy:
-    runs-on: ubuntu-latest  # 在 GitHub 的服务器上运行
+    runs-on: ubuntu-latest
     steps:
-      # 步骤1：下载私有仓库的代码
       - name: Checkout
         uses: actions/checkout@v4
 
-      # 步骤2：安装 Node.js 环境
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 20  # 需与你的 Hexo 版本匹配
+          node-version: 20
 
-      # 步骤3：安装 Hexo 依赖
       - name: Install Dependencies
         run: npm install
 
-      # 步骤4：生成豆瓣页面（未配置 builtin: true）
-      # 步骤5：生成静态网页文件（Hexo 编译）
+      # 修改生成步骤：根据输入参数判断是否更新豆瓣
       - name: Generate Static Files
         run: |
-          if [ "${{ github.event.inputs.refresh_douban }}" = "true" ]; then
-            npx hexo douban  # 仅在手动选择时更新
+          if [ "${{ github.event.inputs.refresh_douban }}" = 'true' ]; then
+            npx hexo douban
           fi
           npm run build
-      
 
-      # 步骤6：推送生成的网页到公开仓库
       - name: Deploy to Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          deploy_key: ${{ secrets.DEPLOY_KEY }}  # 使用之前添加的私钥
-          publish_dir: ./public                  # Hexo 生成的文件夹
-          external_repository: MiFaZhan/MiFaZhan.github.io  # 改为你的公开仓库名
-          publish_branch: blog                   # 推送到公开仓库的 main 分支
+          deploy_key: ${{ secrets.DEPLOY_KEY }}
+          publish_dir: ./public
+          external_repository: MiFaZhan/MiFaZhan.github.io
+          publish_branch: blog
