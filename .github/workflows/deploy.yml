@@ -34,16 +34,6 @@ jobs:
           fi
           npm run build  # 确保此命令包含 hexo generate
 
-      # 新增步骤：同步 abbrlink 到源文件
-      - name: Sync Abbrlink to Source
-        run: |
-          # 显式初始化 Hexo 环境
-          npx hexo g --silent  # 触发 generateAfter 事件
-          # 或直接调用插件逻辑
-          node scripts/sync_abbrlink.js
-        env:
-          HEXO_SCRIPT_ENV: production  # 强制加载插件
-
       # 提交源码变更（含 abbrlink 属性）
       - name: Commit Source Changes
         env:
