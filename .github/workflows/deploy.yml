@@ -20,13 +20,12 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-      # 步骤4（新增）：生成豆瓣页面（若未配置 builtin: true）
-      - name: Generate Douban Pages
-        run: npx hexo douban
-
+      # 步骤4：生成豆瓣页面（未配置 builtin: true）
       # 步骤5：生成静态网页文件（Hexo 编译）
       - name: Generate Static Files
-        run: npm run build  # 或 hexo generate
+        run: |
+            npx hexo douban
+            npm run build
 
       # 步骤6：推送生成的网页到公开仓库
       - name: Deploy to Pages
