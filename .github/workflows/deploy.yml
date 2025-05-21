@@ -22,7 +22,7 @@ jobs:
 
       # 步骤4（新增）：生成豆瓣页面（若未配置 builtin: true）
       - name: Generate Douban Pages
-      run: npx hexo douban
+        run: npx hexo douban
 
       # 步骤5：生成静态网页文件（Hexo 编译）
       - name: Generate Static Files
