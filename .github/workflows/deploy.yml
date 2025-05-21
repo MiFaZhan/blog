@@ -26,7 +26,7 @@ jobs:
 
       # 步骤5：生成静态网页文件（Hexo 编译）
       - name: Generate Static Files
-        run: npm hexo generate
+        run: npm run build  # 或 hexo generate
 
       # 步骤6：推送生成的网页到公开仓库
       - name: Deploy to Pages
