@@ -124,7 +124,7 @@ douban:
   meta_max_line: 4
   customize_layout: page
   swup: false
-  # timeout: 20000
+  timeout: 30000  
   book:
     path: books/index.html
     title: "我的书架"   # 页面标题
