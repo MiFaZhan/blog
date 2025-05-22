@@ -2,6 +2,14 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [ main ]  # 监听 main 分支的推送
+  # 添加手动触发选项
+  workflow_dispatch:
+    inputs:
+      refresh_douban:
+        description: '手动更新豆瓣数据（默认不更新）'
+        required: false
+        default: 'false'
+        
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest  # 在 GitHub 的服务器上运行
@@ -22,15 +30,14 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-      # 步骤4：生成豆瓣页面（未配置 builtin: true）
+      # 步骤4：根据输入参数判断是否更新豆瓣
       # 步骤5：生成静态网页文件（Hexo 编译）
       - name: Generate Static Files
         run: |
-            npm run build
-
-        # run: |
-        #     npx hexo douban
-        #     npm run build
+          if [ "${{ github.event.inputs.refresh_douban }}" = 'true' ]; then
+            npx hexo douban
+          fi
+          npm run build
 
 
       # 步骤6：提交更新后的源文件（包含 abbrlink）到 blog 仓库
