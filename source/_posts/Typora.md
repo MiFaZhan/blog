@@ -53,15 +53,15 @@ tags:
 
 #### 全局资源文件夹
 
-![](app://ed317644ec0902ff41eb952f9013f84cae1f/C:/My%20Code/blog/source/_posts/%E6%96%87%E7%AB%A0%E7%BC%96%E8%BE%91/file-20250515234537885.png?1747323937890)
+![](Typora/file-20250522183920404.png)
 
 #### 文章资源文件夹
 
-![](app://ed317644ec0902ff41eb952f9013f84cae1f/C:/My%20Code/blog/source/_posts/%E6%96%87%E7%AB%A0%E7%BC%96%E8%BE%91/file-20250515234759701.png?1747324079705)
+![](Typora/file-20250522183934839.png)
 
 #### 相对路径引用的标签插件
 
-![](app://ed317644ec0902ff41eb952f9013f84cae1f/C:/My%20Code/blog/source/_posts/%E6%96%87%E7%AB%A0%E7%BC%96%E8%BE%91/file-20250519222928683.png?1747664968688)
+![](Typora/file-20250522183954087.png)
 
 这是 Hexo 的专属标签插件，​**​自动适配 Hexo 资源文件夹的路径规则​**​。当开启 `post_asset_folder` 配置后，Hexo 会根据文章路径动态生成图片的最终 URL
 
@@ -73,7 +73,7 @@ tags:
 
 #### 使用 Markdown 嵌入图片
 
-![](app://ed317644ec0902ff41eb952f9013f84cae1f/C:/My%20Code/blog/source/_posts/%E6%96%87%E7%AB%A0%E7%BC%96%E8%BE%91/file-20250515234617283.png?1747323977286)
+![](Typora/file-20250522184024701.png)
 
 [hexo-renderer-marked](https://github.com/hexojs/hexo-renderer-marked) 是 Hexo 默认安装的 Markdown 渲染器插件，无效手动安装，检查 `post_asset_folder: true` 是否正确配置即可
 
@@ -87,7 +87,7 @@ post_asset_folder: true
 
 接着打开 Typora - 偏好设置 - 图像
 
-![Typora设置](app://ed317644ec0902ff41eb952f9013f84cae1f/C:/My%20Code/blog/source/_posts/%E6%96%87%E7%AB%A0%E7%BC%96%E8%BE%91/file-20250501223228288.png?1746109948293)
+![](Typora/file-20250522184109372.png)
 
 按上图所示将插入图片时... 调整为 复制到指定路径，并在下方输入 `./${filename}`，
 
@@ -98,8 +98,6 @@ post_asset_folder: true
 Typora 会自动将图片保存到 markdown 文件同名文件夹中，并使用 `![](image.jpg)` 语法引用
 
 从而实现优雅地编辑博客文章
-
-![](app://ed317644ec0902ff41eb952f9013f84cae1f/C:/My%20Code/blog/source/_posts/%E6%96%87%E7%AB%A0%E7%BC%96%E8%BE%91/file-20250501223928226.png?1746110368231)
 
 ## 图片引用存在的问题
 
