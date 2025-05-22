@@ -8,9 +8,11 @@
 
 ## 🌟 核心特性
 
-### 🎨 深度定制的 Fluid 主题
+### 🎨 美化
 - **视频背景功能**  
   改造 Fluid 主题实现动态视频背景，[技术细节说明](https://mifazhan.top/posts/46339511/)
+- **豆瓣数据同步**  
+  通过 [hexo-douban](https://github.com/mythsman/hexo-douban) 自动生成书影音页面。
 
 ### ⚡️ Obsidian 全链路工作流
 Obsidian 统一编辑体验
@@ -23,8 +25,10 @@ Obsidian 统一编辑体验
   依托于 Obsidian 多平台客户端以及Obsidian Git插件同步功能，实现多平台统一编辑体验
 
 ### 🤖 自动化部署体系
-- **永久链接固化**  
-  通过 [hexo-abbrlink](https://github.com/ohroy/hexo-abbrlink) 生成 CRC 校验永久链接
+- **自动化部署**  
+  通过 GitHub Actions 实现「源码更新 → 生成静态页面 → 同步永久链接 → 发布」全流程自动化。
+- **永久链接固化**
+- 集成 [hexo-abbrlink](https://github.com/ohroy/hexo-abbrlink) 插件，文章 URL 与内容强绑定，避免因标题修改导致链接失效。
 - **实时内容同步**  
   GitHub Actions 自动完成：
   1. 生成静态页面时回写 `abbrlink` 到源文件
