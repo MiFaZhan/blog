@@ -59,4 +59,5 @@ blog/
 ├── .github/workflows/     # 自动化流程
 │   └── deploy.yml         # CI/CD 部署管道
 ├── _config.yml            # Hexo 主配置
+├── _config.fluid.yml      # Fluid主题配置
 └── package.json           # 项目依赖清单
