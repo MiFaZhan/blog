@@ -27,3 +27,5 @@ layout: about
    配置hexo-generator-sitemap自动生成站点地图
    配置Hexo-url-submission主动向搜索引擎提交数据
 
+7. **2025-05-01**
+   使用 Obsidian 及 Git 插件实现方便快捷的多端同步编辑
