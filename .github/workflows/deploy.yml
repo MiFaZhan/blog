@@ -54,29 +54,32 @@ jobs:
         env:
           SOURCE_REPO_TOKEN: ${{ secrets.PAT }}
         run: |
-          # 设置 Git 身份
+          # 1. 安装必要工具
+          sudo apt-get update
+          sudo apt-get install -y rsync
+          
+          # 2. 设置全局 Git 身份（必须）
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
           
-          # 克隆源仓库
+          # 3. 克隆源仓库（使用令牌认证）
           git clone "https://$SOURCE_REPO_TOKEN@github.com/MiFaZhan/blog-source.git" blog-source-sync
           
-          # 进入目录
+          # 4. 同步文件（正确顺序）
+          rsync -av --progress --delete source/ blog-source-sync/source/
+          
+          # 5. 进入克隆的仓库目录
           cd blog-source-sync
           
-          # 检出正确分支
-          git checkout main
-          
-          # 删除所有现有文件（保留 .git）
-          find . -maxdepth 1 ! -name '.git' ! -name '.' -exec rm -rf {} +
-          
-          # 复制源文件
-          cp -r ../source/* .
-          
-          # 检查更改
+          # 6. 检查更改
           if [ -n "$(git status --porcelain)" ]; then
+            # 7. 添加所有更改
             git add -A
+            
+            # 8. 提交更改（使用 [skip ci] 避免循环）
             git commit -m "自动同步: 更新 abbrlink 属性 [skip ci]"
+            
+            # 9. 安全推送
             git push origin main
             echo "✅ 已同步 abbrlink 回 blog-source"
           else
