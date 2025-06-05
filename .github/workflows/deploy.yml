@@ -52,7 +52,7 @@ jobs:
 
       - name: Sync back to blog-source
         env:
-          SOURCE_REPO_TOKEN: ${{ secrets.SOURCE_REPO_TOKEN }}
+          SOURCE_REPO_TOKEN: ${{ secrets.PAT }}
         run: |
           # 设置 git 配置
           git config --global user.name "GitHub Actions"
