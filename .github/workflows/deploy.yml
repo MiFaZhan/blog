@@ -49,3 +49,28 @@ jobs:
           publish_dir: ./public                  # Hexo 生成的文件夹
           external_repository: MiFaZhan/MiFaZhan.github.io  # 改为你的公开仓库名
           publish_branch: blog                   # 推送到公开仓库的 main 分支
+
+      - name: Sync back to blog-source
+        env:
+          SOURCE_REPO_TOKEN: ${{ secrets.SOURCE_REPO_TOKEN }}
+        run: |
+          # 设置 git 配置
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          
+          # 克隆 blog-source 仓库
+          git clone https://$SOURCE_REPO_TOKEN@github.com/MiFaZhan/blog-source.git blog-source-tmp
+          
+          # 复制更新后的文件
+          rsync -av --progress source/ blog-source-tmp/source/ --delete
+          
+          # 提交更改到 blog-source
+          cd blog-source-tmp
+          if [ -n "$(git status --porcelain)" ]; then
+            git add -A
+            git commit -m "自动更新: 同步 abbrlink 属性"
+            git push origin main
+            echo "✅ 已同步 abbrlink 回 blog-source"
+          else
+            echo "🟢 无变化，无需同步"
+          fi
